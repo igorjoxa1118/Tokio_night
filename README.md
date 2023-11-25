@@ -152,12 +152,12 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 ~/.config/blender/Ваша версия/config/colorshemas/
 ```
 
-2. Тему ohmyposh(Zorin.omp.json) можно скинуть в папку ~/.poshthemes/
+2. Тему ohmyposh(Tokio_night.omp.json) можно скинуть в папку ~/.poshthemes/
 
    Затем отредактировать ваш .zshrc добавив строку в самый низ
 
 ```python
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/Zorin.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json.omp.json)"
 ```
 
 3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)

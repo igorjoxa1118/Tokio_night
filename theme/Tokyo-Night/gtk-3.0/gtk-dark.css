@@ -3645,7 +3645,7 @@ menu menuitem label:dir(ltr),
 menu .view:selected,
 .menu .view:selected,
 .context-menu .view:selected {
-  background-color: #565f89;
+  background-color: #bb9af7;
 }
 
 menu > arrow,
@@ -9615,7 +9615,7 @@ window.background.chromium treeview.view button {
 }
 
 window.background.chromium menu {
-  border-color: #565f89;
+  border-color: #bb9af7;
 }
 
 window.background.chromium menu menuitem {
@@ -9722,7 +9722,7 @@ tooltip.background.chromium {
   > widget
   > radiobutton
   > radio:not(:checked):not(:indeterminate):active {
-  color: #565f89;
+  color: #bb9af7;
 }
 
 #MozillaGtkWidget
