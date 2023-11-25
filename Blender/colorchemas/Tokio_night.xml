@@ -344,7 +344,7 @@
     </user_interface>
     <view_3d>
       <ThemeView3D
-        grid="#16161e"
+        grid="#c0caf5"
         clipping_border_3d="#16161eff"
         wire="#A22AE1"
         wire_edit="#000000"
@@ -435,7 +435,7 @@
               <ThemeGradientColors
                 show_grad="TRUE"
                 background_type="RADIAL"
-                high_gradient="#bb9af7"
+                high_gradient="#16161E"
                 gradient="#16161e"
                 >
               </ThemeGradientColors>
@@ -454,7 +454,7 @@
     </view_3d>
     <graph_editor>
       <ThemeGraphEditor
-        grid="#16161e"
+        grid="#c0caf5"
         frame_current="#bb9af7"
         time_scrub_background="#16161ee6"
         window_sliders="#8a8a8a"
@@ -563,7 +563,7 @@
     </file_browser>
     <nla_editor>
       <ThemeNLAEditor
-        grid="#16161e"
+        grid="#c0caf5"
         view_sliders="#969696"
         active_action="#cc701a66"
         active_action_unset="#9987614d"
@@ -626,7 +626,7 @@
     </nla_editor>
     <dopesheet_editor>
       <ThemeDopeSheet
-        grid="#16161e"
+        grid="#c0caf5"
         frame_current="#bb9af7"
         time_scrub_background="#16161ee6"
         value_sliders="#16161e"
@@ -772,7 +772,7 @@
     </image_editor>
     <sequence_editor>
       <ThemeSequenceEditor
-        grid="#16161e"
+        grid="#c0caf5"
         window_sliders="#a0a0a0"
         movie_strip="#516987"
         movieclip_strip="#20208f"
