@@ -56,6 +56,7 @@ $${\color{red}!! ВАЖНО !!}$$
 
 
 $${\color{lightgreen}Управление \space окнами \space в \space случае \space замены \space config.}$$
+
 $${\color{lightblue}Подробнее \space смотреть \space в \space Tokio_night/i3/keybinds}$$
 
 В моем случае используется xfce4-terminal. Скриншотка Kazam
