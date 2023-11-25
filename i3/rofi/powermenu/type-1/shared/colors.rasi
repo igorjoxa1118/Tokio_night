@@ -15,4 +15,4 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/i3/polybar/Zorin/colors/rofi/Appmenu/onedark.rasi"
+@import "~/.config/i3/polybar/Tokio_night/colors/rofi/Appmenu/onedark.rasi"
