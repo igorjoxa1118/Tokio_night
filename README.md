@@ -161,3 +161,12 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/Zorin.omp.json)"
 ```
 
 3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
+
+4. Цветовая тема для плеера cmus.
+
+> Закинуть Tokio_night.theme в ~/.config/cmus/  
+Затем открыть плеер, нажать ":" и вставить это:
+
+```python
+colorscheme Tokio_night
+```
