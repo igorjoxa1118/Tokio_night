@@ -37,7 +37,7 @@ yay -S autotiling
 >В случае земены config файла своего на мой, эти записи делать не нужно.
 
 ```python
-exec_always --no-startup-id "$HOME/.config/i3/polybar/Tokyo-Night/launch.sh"
+exec_always --no-startup-id "$HOME/.config/i3/polybar/Tokio_night/launch.sh"
 ```
 
 ```python
