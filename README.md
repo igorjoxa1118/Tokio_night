@@ -157,7 +157,7 @@ $${\color{lightgreen}Что \space еще \space ?}$$
    Затем отредактировать ваш .zshrc добавив строку в самый низ
 
 ```python
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 ```
 
 3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
