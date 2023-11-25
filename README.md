@@ -160,3 +160,4 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/Zorin.omp.json)"
 ```
 
+3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
