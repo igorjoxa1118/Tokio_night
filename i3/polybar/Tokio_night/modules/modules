@@ -129,7 +129,7 @@ content-foreground = ${colors.black}
 content-background = ${colors.foreground_orange}
 content-padding = 2
 content-font = 0
-click-left = "$HOME/.config/i3/rofi/launchers/type-1/launcher.sh"
+click-left = "$HOME/.config/i3/rofi/launchers/type-3/launcher.sh"
 
 
 
@@ -232,7 +232,7 @@ content-padding = 2
 content-font = 0
 content-foreground = ${colors.black}
 content-background = ${colors.foreground_orange}
-click-left = ~/.config/i3/rofi/powermenu/type-1/powermenu.sh
+click-left = "$HOME/.config/i3/rofi/powermenu/type-1/powermenu.sh"
 
 
 
@@ -395,7 +395,7 @@ click-left = /usr/bin/kdenlive &
 
 [module/gimp]
 type = custom/text
-content = "  Gimp"
+content = "  Gimp"
 content-font = 0
 content-background = ${colors.foreground_violet}
 content-foreground = ${colors.black}
@@ -404,7 +404,7 @@ click-left = /usr/bin/gimp &
 
 [module/krita]
 type = custom/text
-content = "  Krita"
+content = "  Krita"
 content-font = 0
 content-background = ${colors.foreground_violet}
 content-foreground = ${colors.black}

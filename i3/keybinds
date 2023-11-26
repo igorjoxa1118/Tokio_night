@@ -151,7 +151,7 @@ bindsym $Mod+n scratchpad toggle
 
 #---------------------------------------------
 ## Клавиши для запуска приложений
-bindsym $mod+d exec --no-startup-id "$HOME/.config/i3/rofi/launchers/type-1/launcher.sh"
+bindsym $mod+d exec --no-startup-id "$HOME/.config/i3/rofi/launchers/type-2/launcher.sh"
 bindsym $mod+Return exec --no-startup-id "xfce4-terminal --title term-tiling --hide-menubar"
 
 bindsym $mod1+f exec --no-startup-id "firefox"

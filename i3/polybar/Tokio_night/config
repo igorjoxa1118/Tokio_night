@@ -10,7 +10,7 @@ screenchange-reload = true
 [global/wm]
 margin-top = 0
 margin-bottom = 0
-include-file = ~/.config/i3/polybar/Tokio_night/modules
+include-file = ~/.config/i3/polybar/Tokio_night/modules/list
 
 # //////////////////////rofi////////////////
 [bar/top]
@@ -132,7 +132,7 @@ module-margin-left = 2
 module-margin-right = 0
 
 modules-left = terminal web thunar rawtherapee kdenlive
-modules-center = i3
+modules-center = round-left-blue i3 round-right-blue
 modules-right = krita gimp blender code telegram kodi
 
 cursor-click = pointer

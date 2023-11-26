@@ -2,6 +2,7 @@
 ![](./screenshots/terminal.png)
 ![](./screenshots/thunar.png)
 ![](./screenshots/appmenu.png)
+![](./screenshots/fastmenu.png)
 ![](./screenshots/powermenu.png)
 ![](./screenshots/blender.png)
 
