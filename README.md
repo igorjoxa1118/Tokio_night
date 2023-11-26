@@ -3,7 +3,7 @@
 ![](./screenshots/thunar.png)
 ![](./screenshots/appmenu.png)
 ![](./screenshots/fastmenu.png)
-![](./screenshots/powermenu.png)
+
 ![](./screenshots/blender.png)
 
 $${\color{lightgreen}Необходимые \space условия \space путей, \space для \space корректной \space работы.}$$
