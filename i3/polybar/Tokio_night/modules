@@ -384,7 +384,7 @@ interval = 1.0
 
 accumulate-stats = true
 unknown-as-up = trueblack
-label-connected = "%{A1:networkmanager_dmenu &:} %{F#6C77BB}%{F-} %downspeed%%{A} %{F#6C77BB}%{F-} %upspeed%%{A}"
+label-connected = "%{A1:networkmanager_dmenu &:} %{F#6C77BB}%{F-} %{F#2ac3de}%downspeed%%{A} %{F#6C77BB}%{F-} %{F#2ac3de}%upspeed%%{A}"
 label-connected-background = ${color.background}
 
 label-disconnected = "%{A1:networkmanager_dmenu &:} Offline%{A}"
