@@ -19,7 +19,7 @@ exec --no-startup-id "gnome-keyring-daemon --start --components=pkcs11"
 #exec_always --no-startup-id "$HOME/.config/i3/polybar/Tokio_night/launch.sh"
 
 # Dark-Souls theme #
-exec_always --no-startup-id "$HOME/.config/i3/polybar/Dark-Souls/launch.sh"
+exec_always --no-startup-id "$HOME/.config/i3/polybar/Tokio_night/launch.sh"
 ####################
 
 exec_always --no-startup-id "dunst -config $HOME/.config/dunst/dunstrc"

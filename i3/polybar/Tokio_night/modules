@@ -457,7 +457,7 @@ format-background = ${color.background}
 
 [module/power]
 type = custom/text
-content = ""
+content = " "
 content-padding = 0
 content-font = 0
 content-foreground = ${color.foreground_blue}
