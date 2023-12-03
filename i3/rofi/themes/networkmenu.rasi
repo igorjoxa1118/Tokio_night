@@ -25,10 +25,10 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               @background;
-    text-color:                     @foreground;
+    background-color:               #16161E;
+    text-color:                     #2ac3de;
     border:                  		2px;
-    border-color:                  	@selected;
+    border-color:                  	#bb9af7;
     border-radius:                  10px;
     width:                          400px;
     location:                       center;
@@ -41,10 +41,10 @@ prompt {
     enabled: 						true;
 	margin: 						0px 0px 0px 8px;
     padding:    					6px 6px 6px 6px;
-	background-color: 				@selected;
-	text-color: 					@background;
+	background-color: 				#bb9af7;
+	text-color: 					#16161E;
     border:                  		2px 2px 2px 2px;
-    border-color:                  	@selected;
+    border-color:                  	#bb9af7;
     border-radius:                  5px;
 }
 
@@ -53,21 +53,21 @@ textbox-prompt-colon {
 	str: 							" 直 ";
     border-radius:                  2px;
     border-radius:                  5px;
-    background-color:               @selected;
-    text-color:                     @background;
+    background-color:               #bb9af7;
+    text-color:                     #16161E;
     padding:    					6px 10px 6px 10px;
 	font:							"Iosevka Nerd Font 10";
 }
 
 entry {
-    background-color:               @selected;
-    text-color:                     @background;
+    background-color:               #bb9af7;
+    text-color:                     #16161E;
     margin: 						0px 0px 0px 8px;
     padding:    					6px 6px 6px 6px;
     border:                  		2px;
     border-radius:                  5px;
-    border-color:                  	@selected;
-    placeholder-color:              @background;
+    border-color:                  	#bb9af7;
+    placeholder-color:              #16161E;
     placeholder:                    " Search... ";
     expand:                         true;
     horizontal-align:               0;
@@ -78,8 +78,8 @@ entry {
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt, entry ];
     spacing:                        0;
-    background-color:               @background;
-    text-color:                     @foreground;
+    background-color:               #16161E;
+    text-color:                     #2ac3de;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
@@ -87,14 +87,14 @@ inputbar {
 }
 
 case-indicator {
-    background-color:               @background;
-    text-color:                     @foreground;
+    background-color:               #16161E;
+    text-color:                     #2ac3de;
     spacing:                        0;
 }
 
 
 listview {
-    background-color:               @background;
+    background-color:               #16161E;
     columns:                        1;
     lines:							7;
     spacing:                        4px;
@@ -104,15 +104,15 @@ listview {
 }
 
 mainbox {
-    background-color:               @background;
+    background-color:               #16161E;
     children:                       [ inputbar, listview ];
     spacing:                       	10px;
     padding:                        10px;
 }
 
 element {
-    background-color:               @background;
-    text-color:                     @foreground;
+    background-color:               #16161E;
+    text-color:                     #2ac3de;
     orientation:                    horizontal;
     border-radius:                  5px;
     padding:                        5px;
@@ -139,30 +139,30 @@ element-text {
 element normal.urgent,
 element alternate.urgent {
     background-color:               @urgent;
-    text-color:                     @foreground;
+    text-color:                     #2ac3de;
     border-radius:                  0px;
 }
 
 element normal.active,
 element alternate.active {
-    background-color:               @background;
-    text-color:                     @foreground;
+    background-color:               #16161E;
+    text-color:                     #2ac3de;
 }
 
 element selected {
-    background-color:               @selected;
-    text-color:                     @background;
+    background-color:               #bb9af7;
+    text-color:                     #16161E;
     border:                  		2px;
     border-radius:                  5px;
-    border-color:                  	@selected;
+    border-color:                  	#bb9af7;
 }
 
 element selected.urgent {
     background-color:               @urgent;
-    text-color:                     @foreground;
+    text-color:                     #2ac3de;
 }
 
 element selected.active {
-    background-color:               @background;
-    color:                          @foreground;
+    background-color:               #16161E;
+    color:                          #2ac3de;
 }

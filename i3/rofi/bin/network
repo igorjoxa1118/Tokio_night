@@ -20,7 +20,7 @@
 
 DIR="~/.config"
 
-rofi_command="rofi -theme $DIR/rofi/themes/network.rasi"
+rofi_command="rofi -theme $DIR/i3/rofi/themes/network.rasi"
 
 ## Get info
 IFACE="$(nmcli | grep -i interface | awk '/interface/ {print $2}')"

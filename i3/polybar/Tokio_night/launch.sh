@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # Terminate already running bar instances
 killall -q polybar
@@ -6,17 +6,8 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch bar1 and bar2
-if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar -c $HOME/.config/i3/polybar/Tokio_night/config --reload top &
-    MONITOR=$m polybar -c $HOME/.config/i3/polybar/Tokio_night/config --reload bottom &
-  done
-else
-  polybar -c $HOME/.config/i3/polybar/Tokio_night/config --reload top &
-fi
+# Launch Polybar, using default config location ~/Документы/dotfiles/config/polybar/config
+polybar top --config=~/.config/i3/polybar/Tokio_night/config.ini &
+polybar bottom --config=~/.config/i3/polybar/Tokio_night/config.ini &
 
-# polybar top &
-# polybar bottom &
-
-echo "Bars launched..."
+echo "Polybar launched..."

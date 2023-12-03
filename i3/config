@@ -20,7 +20,7 @@ include "$HOME/.config/i3/start_progs"
     
 #--------------
 
-font pango:ClearSansMedium 9
+font pango:ClearSansMedium 12
 
 set $mod Mod4
 set $mod1 Mod1

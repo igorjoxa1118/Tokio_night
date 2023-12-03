@@ -1,7 +1,7 @@
 * {
     background-color: rgba(0,0,0,10%);
-    background: #282c34;
-    foreground: #dcdfe4;
+    background: #16161E;
+    foreground: #2ac3de;
     border-color: @background;
     spacing: 0;
     border: 0;
