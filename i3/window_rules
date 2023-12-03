@@ -43,6 +43,6 @@ assign [class="(?i)blender|krita|gimp"] $ws5
 assign [class="(?i)fractal|telegram|discord"] $ws6
 assign [class="(?i)smplayer|kodi|retroarch"] $ws7
 assign [class="(?i)ristretto"] $ws8
-assign [class="(?i)virtualbox"] $ws9
+assign [class="(?i)virtualbox|Virt-manager"] $ws9
 assign [class="(?i)qBittorrent|simplescreenrecorder|transmission-gtk"] $ws10
 #---------------------------------------------
