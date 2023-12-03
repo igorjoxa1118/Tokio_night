@@ -5,6 +5,7 @@
 ![](./screenshots/PowerMenu.png)
 ![](./screenshots/Thunar.png)
 ![](./screenshots/Blender.png)
+![](./screenshots/Telegram.png) 
 
 $${\color{lightgreen}Необходимые \space условия \space путей, \space для \space корректной \space работы.}$$
 
