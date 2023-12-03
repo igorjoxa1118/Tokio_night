@@ -339,7 +339,8 @@ type = internal/network
 
 interface = wlp0s20f3
 
-format-connected =%{A1:~/.config/i3/rofi/bin/network:}<ramp-signal>  <label-connected>%{A}
+format-connected = %{A1:~/.config/i3/rofi/bin/network:}<label-connected>%{A}
+format-connected-background = ${color.background}
 format-packetloss = <animation-packetloss>
 label-connected = %local_ip%
 label-connected-foreground = ${color.foreground_blue}
@@ -347,37 +348,21 @@ label-connected-background = ${color.background}
 format-connected-font = 0
 
 format-disconnected = "  NoDetect'"
-ramp-signal-0 = 
-ramp-signal-0-foreground = ${color.foreground_orange}
-ramp-signal-0-background = ${color.background}
+#ramp-signal-0 = 
+#ramp-signal-1 = 
+#ramp-signal-2 = 
+#ramp-signal-3 = 
+#ramp-signal-4 = 
+#ramp-signal-5 = 
+#ramp-signal-foreground = ${color.foreground_orange}
+#ramp-signal-background = ${color.background}
 
-ramp-signal-1 = 
-ramp-signal-1-foreground = ${color.foreground_orange}
-ramp-signal-1-background = ${color.background}
-
-ramp-signal-2 = 
-ramp-signal-2-foreground = ${color.foreground_orange} 
-ramp-signal-2-background = ${color.background}
-
-ramp-signal-3 = 
-ramp-signal-3-foreground = ${color.foreground_orange}
-ramp-signal-3-background = ${color.background}
-
-ramp-signal-4 = 
-ramp-signal-4-foreground = ${color.foreground_blue}
-ramp-signal-4-background = ${color.background}
-
-ramp-signal-5 = 
-ramp-signal-5-foreground = ${color.foreground_blue}
-ramp-signal-5-background = ${color.background}
-
-format-connected-underline = ${color.foreground_violet}
+#format-connected-underline = ${color.foreground_violet}
 
 animation-packetloss-0 = ⚠
 animation-packetloss-0-foreground = #417099
 animation-packetloss-1 = 📶
 animation-packetloss-1-foreground = #000000
-
 animation-packetloss-framerate = 500
 
 ; Change it for yourself
@@ -400,6 +385,7 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = trueblack
 label-connected = "%{A1:networkmanager_dmenu &:} %{F#6C77BB}%{F-} %downspeed%%{A} %{F#6C77BB}%{F-} %upspeed%%{A}"
+label-connected-background = ${color.background}
 
 label-disconnected = "%{A1:networkmanager_dmenu &:} Offline%{A}"
 
