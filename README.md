@@ -42,7 +42,7 @@ exec_always --no-startup-id "$HOME/.config/i3/polybar/Tokio_night/launch.sh"
 ```
 
 ```python
-exec --no-startup-id "picom -b --config ~/.config/picom.conf"
+exec --no-startup-id "picom -b --config ~/.config/i3/picom.conf"
 ```
 
 ```python
