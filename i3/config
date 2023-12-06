@@ -2,8 +2,8 @@
 ## Подключение отдельных файлов конфигураций i3
 #---------------------------------------------
 include "$HOME/.config/i3/keybinds"
-include "$HOME/.config/i3/window_rules"
-include "$HOME/.config/i3/start_progs"
+include "$HOME/.config/i3/rules"
+include "$HOME/.config/i3/autostart"
 
 #------------
 ## Цвета окон 
