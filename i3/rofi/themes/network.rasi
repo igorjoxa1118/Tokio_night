@@ -27,10 +27,10 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               #16161E;
-    text-color:                     #2ac3de;
+    background-color:               @background-alt;
+    text-color:                     @selected;
     border:                  		1px;
-    border-color:                  	#bb9af7;
+    border-color:                  	@border;
     border-radius:                  10px;
     width:                          355px;
     location:                       center;
@@ -43,10 +43,10 @@ prompt {
     enabled: 						true;
 	margin: 						0px 0px 0px 10px;
     padding:    					6px 6px 6px 6px;
-	background-color: 				#bb9af7;
-	text-color: 					#16161E;
+	background-color: 				@border;
+	text-color: 					@selected;
     border:                  		1px;
-    border-color:                  	#bb9af7;
+    border-color:                  	@background;
     border-radius:                  5px;
 }
 
@@ -54,16 +54,16 @@ textbox-prompt-colon {
 	expand: 						false;
 	str: 							"﬉";
     border-radius:                  5px;
-    background-color:               #bb9af7;
-    text-color:                     #16161E;
+    background-color:               @background;
+    text-color:                     @background-alt;
     padding:    					6px 10px 6px 10px;
 	font:							"Iosevka Nerd Font 10";
 }
 
 entry {
-    background-color:               #16161E;
-    text-color:                     #16161E;
-    placeholder-color:              #16161E;
+    background-color:               @background-alt;
+    text-color:                     @background-alt;
+    placeholder-color:              @background-alt;
     placeholder:                    "";
     expand:                         true;
     horizontal-align:               0;
@@ -74,11 +74,11 @@ entry {
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
     spacing:                        0;
-    background-color:               #16161E;
-    text-color:                     #2ac3de;
+    background-color:               @background-alt;
+    text-color:                     @selected;
     border:                  		0px 0px 0px 0px;
     border-radius:                  5px;
-    border-color:                  	#bb9af7;
+    border-color:                  	@border;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
@@ -86,14 +86,14 @@ inputbar {
 }
 
 case-indicator {
-    background-color:               #16161E;
-    text-color:                     #2ac3de;
+    background-color:               @background-alt;
+    text-color:                     @selected;
     spacing:                        0;
 }
 
 
 listview {
-    background-color:               #16161E;
+    background-color:               @background-alt;
     columns:                        1;
     lines:							5;
     spacing:                        10px;
@@ -103,19 +103,19 @@ listview {
 }
 
 mainbox {
-    background-color:               #16161E;
+    background-color:               @background-alt;
     children:                       [ inputbar, listview ];
     spacing:                       	10px;
     padding:                        10px;
 }
 
 element {
-    background-color:               #16161E;
-    text-color:                     #2ac3de;
+    background-color:               @background-alt;
+    text-color:                     @selected;
     orientation:                    horizontal;
     border:                  		1px;
     border-radius:                  5px;
-    border-color:                  	#bb9af7;
+    border-color:                  	@border;
     padding:                        23.5px 25px 23.5px 25px;
 }
 
@@ -139,18 +139,18 @@ element-text {
 }
 
 element selected {
-    background-color:               #bb9af7;
-    text-color:                     #16161E;
+    background-color:               @background;
+    text-color:                     @background-alt;
     border:                  		0px;
     border-radius:                  0px;
-    border-color:                  	#bb9af7;
+    border-color:                  	@border;
 }
 
 element.active,
 element.selected.urgent {
-  background-color: #f7768e;
-  text-color: #16161E;
-  border-color: #f7768e;
+  background-color: @active;
+  text-color: @background-alt;
+  border-color: @active;
 }
 
 element.selected.urgent {
@@ -160,10 +160,10 @@ element.selected.urgent {
 element.urgent,
 element.selected.active {
   background-color: @off;
-  text-color: #16161E;
+  text-color: @background-alt;
   border-color: @off;
 }
 
 element.selected.active {
-  border-color: #bb9af7;
+  border-color: @border;
 }
