@@ -23,7 +23,19 @@ $${\color{red}!! ВАЖНО !!}$$
 
 4. Найти и установить шрифт [Iosevka Term](https://github.com/be5invis/Iosevka)
 
+> В Arch-based дистрибутивах есть пакеты:
+
+```python
+sudo pacman -S ttf-iosevkaterm-nerd ttf-iosevka-nerd
+```
+
 5. Найти и установить [ohmyposh](https://ohmyposh.dev/docs/installation/linux). Не обязательно, если вы не хотите. Но внешний вид терминала, у вас, может быть другим.
+
+> В Arch-based дистрибутивах есть пакет:
+
+```python
+sudo pacman -S oh-my-posh-bin
+```
 
 6. Установить [autotiling](https://github.com/nwg-piotr/autotiling)
 
@@ -61,7 +73,7 @@ $${\color{lightgreen}Управление \space окнами \space в \space �
 
 > Подробнее смотреть в Tokio_night/i3/keybinds
 
-В моем случае используется xfce4-terminal. Скриншотка Kazam
+В моем случае используется xfce4-terminal. Скриншотка Kazam. Zsh шел.
 
 1. Закрыть окно
 
