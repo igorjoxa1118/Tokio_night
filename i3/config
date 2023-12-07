@@ -4,21 +4,8 @@
 include "$HOME/.config/i3/keybinds"
 include "$HOME/.config/i3/rules"
 include "$HOME/.config/i3/autostart"
+include "$HOME/.config/i3/colors"
 
-#------------
-## Цвета окон 
-#------------
-    # Класс                 border  backgr. text    indicator
-    client.focused          #2ac3de #1f222d #2ac3de #81a1c1
-    client.unfocused        #2e3440 #16161E #bb9af7 #1f222d
-    client.focused_inactive #2e3440 #16161E #888888 #1f222d
-    client.placeholder      #2e3440 #16161E #888888 #1f222d
-    client.urgent           #900000 #900000 #ffffff #900000
-
-    client.background       #242424
-
-    
-#--------------
 
 font pango:ClearSansMedium 10
 
@@ -51,7 +38,7 @@ set $ws-left "$(( $( i3-msg -t get_workspaces | jq '.[] | select(.focused).num' 
 floating_modifier $mod
 
 #----------------------------------------------------------------------------
-## Определение имен для рабочих пространств по умолчанию/
+## Определение имен, для рабочих пространств по умолчанию/
 ## Для которых существуют привязки клавиш в файле "$HOME/.config/i3/keybinds".
 #----------------------------------------------------------------------------
 
