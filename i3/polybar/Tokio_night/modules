@@ -110,6 +110,7 @@ format-background = ${color.bubles}
 label = %output%
 label-maxlen = 50
 label-background = ${color.bubles}
+
 #[module/alsa]
 #type = internal/alsa
 #interval = 5
@@ -369,6 +370,7 @@ label-connected-background = ${color.bubles}
 format-connected-font = 0
 
 format-disconnected = "  NoDetect'"
+format-disconnected-background = ${color.bubles}
 #ramp-signal-0 = 
 #ramp-signal-1 = 
 #ramp-signal-2 = 
@@ -407,8 +409,11 @@ accumulate-stats = true
 unknown-as-up = trueblack
 label-connected = "%{A1:networkmanager_dmenu &:} %{F#6C77BB}%{F-} %{F#2ac3de}%downspeed%%{A} %{F#6C77BB}%{F-} %{F#2ac3de}%upspeed%%{A}"
 label-connected-background = ${color.bubles}
+label-connected-foreground = ${color.red}
 
 label-disconnected = "%{A1:networkmanager_dmenu &:} Offline%{A}"
+label-disconnected-background = ${color.bubles}
+label-disconnected-foreground = ${color.red}
 
 [module/temperature]
 type = internal/temperature
