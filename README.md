@@ -68,6 +68,33 @@ exec_always --no-startup-id autotiling
 $${\color{red}!! ВАЖНО !!}$$
 В любом случае, все модули polybar, которые присутствуют у меня, дожны быть настроены в соответствии с вашими желаниями и вашей машиной.
 
+$${\color{lightgreen}Что \space еще \space ?}$$
+
+1. Еще есть тема оформления для blender. Папка соответствующая.
+```python
+~/.config/blender/Ваша версия/config/colorshemas/
+```
+
+2. Тему ohmyposh(Tokio_night.omp.json) можно скинуть в папку ~/.poshthemes/
+
+   Затем отредактировать ваш .zshrc добавив строку в самый низ
+
+```python
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
+```
+
+3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
+
+4. Цветовая тема для плеера cmus.
+
+> Закинуть Tokio_night.theme в ~/.config/cmus/  
+Затем открыть плеер, нажать ":" и вставить это:
+
+```python
+colorscheme Tokio_night
+```
+
+5. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
 $${\color{lightgreen}Управление \space окнами \space в \space случае \space замены \space config.}$$
 
@@ -157,31 +184,3 @@ mod+f
 ```python
 Print
 ```
-
-$${\color{lightgreen}Что \space еще \space ?}$$
-
-1. Еще есть тема оформления для blender. Папка соответствующая.
-```python
-~/.config/blender/Ваша версия/config/colorshemas/
-```
-
-2. Тему ohmyposh(Tokio_night.omp.json) можно скинуть в папку ~/.poshthemes/
-
-   Затем отредактировать ваш .zshrc добавив строку в самый низ
-
-```python
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
-```
-
-3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
-
-4. Цветовая тема для плеера cmus.
-
-> Закинуть Tokio_night.theme в ~/.config/cmus/  
-Затем открыть плеер, нажать ":" и вставить это:
-
-```python
-colorscheme Tokio_night
-```
-
-5. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
