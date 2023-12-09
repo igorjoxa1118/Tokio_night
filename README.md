@@ -183,3 +183,5 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 ```python
 colorscheme Tokio_night
 ```
+
+5. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
