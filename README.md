@@ -84,8 +84,7 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 
 4. Цветовая тема для плеера cmus.
 
-> Закинуть Tokio_night.theme в ~/.config/cmus/  
-Затем открыть плеер, нажать ":" и вставить это:
+> Открыть плеер, нажать ":" и вставить это:
 
 ```python
 colorscheme Tokio_night
