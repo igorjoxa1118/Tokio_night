@@ -74,9 +74,7 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 ~/.config/blender/Ваша версия/config/colorshemas/
 ```
 
-2. Тему ohmyposh(Tokio_night.omp.json) можно скинуть в папку ~/.poshthemes/
-
-   Затем отредактировать ваш .zshrc добавив строку в самый низ
+2. Чтоб приминить тему poshthemes, нужно отредактировать ваш .zshrc добавив строку в самый низ
 
 ```python
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
