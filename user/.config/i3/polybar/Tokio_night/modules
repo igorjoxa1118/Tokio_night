@@ -7,42 +7,42 @@ gright = 
 
 [module/left1]
 type = custom/text
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.bubles}
 content = ${glyph.gleft}
 content-font = 2
 
 [module/right1]
 type = custom/text
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.bubles}
 content = ${glyph.gright}
 content-font = 2
 
 [module/left_orange]
 type = custom/text
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.bubles}
 content = ${glyph.gleft}
 content-font = 2
 
 [module/right_orange]
 type = custom/text
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.bubles}
 content = ${glyph.gright}
 content-font = 2
 
 [module/left_violet]
 type = custom/text
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.bubles}
 content = ${glyph.gleft}
 content-font = 2
 
 [module/right_violet]
 type = custom/text
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.bubles}
 content = ${glyph.gright}
 content-font = 2
@@ -64,7 +64,7 @@ type = custom/text
 content = ""
 
 content-font = 0
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.dot}
 content-padding = 1
 
@@ -74,7 +74,7 @@ type = custom/text
 content = "·"
 
 content-font = 3
-content-background = ${color.panel_background}
+content-background = ${color.alfa}
 content-foreground = ${color.dot}
 content-padding = 0
 ;
