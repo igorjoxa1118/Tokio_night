@@ -94,9 +94,11 @@ colorscheme Tokio_night
 
 $${\color{lightgreen}Управление \space окнами \space в \space случае \space замены \space config.}$$
 
-> Подробнее смотреть в /.config/i3/keybinds
+<details>
+  <summary>Keybinds</summary>
 
-В моем случае используется xfce4-terminal. Скриншотка Kazam. Zsh шел.
+  ```
+  В моем случае используется xfce4-terminal. Скриншотка Kazam. Zsh шел.
 
 1. Закрыть окно
 
@@ -180,3 +182,8 @@ mod+f
 ```python
 Print
 ```
+  ```
+</details>
+
+> Подробнее смотреть в /.config/i3/keybinds
+
