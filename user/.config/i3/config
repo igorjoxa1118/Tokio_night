@@ -7,7 +7,7 @@ include "$HOME/.config/i3/autostart"
 include "$HOME/.config/i3/colors"
 
 
-font pango:ClearSansMedium 10
+font pango:Iosevka Term Regular 12
 
 set $mod Mod4
 set $mod1 Mod1

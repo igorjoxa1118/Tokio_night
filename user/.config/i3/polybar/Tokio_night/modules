@@ -101,7 +101,7 @@ click-middle = cmus-remote --pause
 scroll-up = cmus-remote --volume +5%
 scroll-down = cmus-remote --volume -5%
 
-label-font = 0
+label-font = 3
 format = <label>
 format-prefix = " "
 format-underline = ${color.foreground_violet}
@@ -369,7 +369,7 @@ label-connected-foreground = ${color.foreground_blue}
 label-connected-background = ${color.bubles}
 format-connected-font = 0
 
-format-disconnected = "  NoDetect'"
+format-disconnected = "  NoDetect"
 format-disconnected-background = ${color.bubles}
 #ramp-signal-0 = 
 #ramp-signal-1 = 

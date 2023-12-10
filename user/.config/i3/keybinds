@@ -213,3 +213,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 #-------------------------------
+
+#--------eww--------#
+
+
