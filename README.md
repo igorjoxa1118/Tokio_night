@@ -94,7 +94,7 @@ colorscheme Tokio_night
 
 $${\color{lightgreen}Управление \space окнами \space в \space случае \space замены \space config.}$$
 
-> Подробнее смотреть в Tokio_night/i3/keybinds
+> Подробнее смотреть в /.config/i3/keybinds
 
 В моем случае используется xfce4-terminal. Скриншотка Kazam. Zsh шел.
 
