@@ -155,7 +155,7 @@ bindsym $mod+d exec --no-startup-id "$HOME/.config/i3/rofi/launchers/type-2/laun
 bindsym $mod+Return exec --no-startup-id "xfce4-terminal --title term-tiling --hide-menubar"
 
 bindsym $mod1+f exec --no-startup-id "firefox"
-bindsym $mod1+l exec --no-startup-id "$HOME/.config/i3/bin/multilock.sh -l blur"
+bindsym $mod1+l exec --no-startup-id "$HOME/.config/i3/bin/multilock.sh"
 bindsym $mod1+space exec --no-startup-id "skippy-xd"
 bindsym $mod1+t exec --no-startup-id "xfce4-terminal --title floating"
 bindsym $mod1+r exec --no-startup-id "xfce4-terminal --title float -e ranger"
