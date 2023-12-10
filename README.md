@@ -10,18 +10,13 @@
 $${\color{lightgreen}Необходимые \space условия \space путей, \space для \space корректной \space работы.}$$
 
  
-1. Содержимое папки i3 нужно закинуть в ~/.config/i3/ 
+1. Содержимое папки user нужно закинуть в домашний каталог "~/" 
 > polybar, picom и rofi уже должны быть установлены в вашей системе 
 
-2. Папки с иконками (BeautyLine и курсор ArchTrix) нужно закинуть в ~/.icons
-3. Папку с темой (Tokio-Night) нужно закидывать в ~/.themes
-
 $${\color{red}!! ВАЖНО !!}$$ 
-> В случае, если вам не нужны изменения в своей конфигураци i3, тогда файлики(мои) 'config' 'keybinds' 'rules' 'autostart' 'colors' и папку 'bin' - закидывать не нужно.
+> Каталоги polybar и rofi должны быть тут ~/.config/i3
 
->В случае, если у вас расположение polybar и rofi находятся в другом месте ~/, и вы не хотите их менять, тогда вам нужно менять путь во всех моих файлах.
-
-4. Найти и установить шрифт [Iosevka Term](https://github.com/be5invis/Iosevka)
+2. Найти и установить шрифт [Iosevka Term](https://github.com/be5invis/Iosevka)
 
 > В Arch-based дистрибутивах есть пакеты:
 
@@ -29,15 +24,19 @@ $${\color{red}!! ВАЖНО !!}$$
 sudo pacman -S ttf-iosevkaterm-nerd ttf-iosevka-nerd
 ```
 
-5. Найти и установить [ohmyposh](https://ohmyposh.dev/docs/installation/linux). Не обязательно, если вы не хотите. Но внешний вид терминала, у вас, может быть другим.
+3. Найти и установить [ohmyposh](https://ohmyposh.dev/docs/installation/linux) и [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) Не обязательно, если вы не хотите. Но внешний вид терминала, у вас, может быть другим.
 
-> В Arch-based дистрибутивах есть пакет:
+> В Arch-based дистрибутивах есть пакет (AUR):
 
 ```python
-sudo pacman -S oh-my-posh-bin
+yay -Ss oh-my-posh-bin
 ```
 
-6. Установить [autotiling](https://github.com/nwg-piotr/autotiling)
+```python
+yay -Ss oh-my-zsh-git
+```
+
+4. Установить [autotiling](https://github.com/nwg-piotr/autotiling)
 
 > Для Arch-based дистрибутивов есть пакет autotiling в AUR
 
@@ -45,7 +44,7 @@ sudo pacman -S oh-my-posh-bin
 yay -S autotiling
 ```
 
-7. Сделать записи в свой текущий i3/config. 
+5. Сделать записи в свой текущий i3/config. 
 
 >В случае земены config файла своего на мой, эти записи делать не нужно.
 
@@ -61,9 +60,9 @@ exec --no-startup-id "picom -b --config ~/.config/i3/picom.conf"
 exec_always --no-startup-id autotiling
 ```
 
-8. Установить обоину куда вам нужно
+6. Установить обоину из .wallpapers туда, куда вам нужно
 
-9. Перезапустить i3
+7. Перезапустить i3
 
 $${\color{red}!! ВАЖНО !!}$$
 В любом случае, все модули polybar, которые присутствуют у меня, дожны быть настроены в соответствии с вашими желаниями и вашей машиной.
