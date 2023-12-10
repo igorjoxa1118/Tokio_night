@@ -101,7 +101,7 @@ click-middle = cmus-remote --pause
 scroll-up = cmus-remote --volume +5%
 scroll-down = cmus-remote --volume -5%
 
-label-font = 3
+label-font = 0
 format = <label>
 format-prefix = " "
 format-underline = ${color.foreground_violet}
