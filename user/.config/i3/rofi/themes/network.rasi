@@ -15,7 +15,7 @@
  */
 
 configuration {
-    font:                           "Iosevka 10";
+    font:                           "Iosevka Term Regular 12";
     show-icons:                     true;
     display-drun: 					"";
     drun-display-format:            "{icon} {name}";
