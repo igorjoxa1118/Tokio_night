@@ -8,42 +8,42 @@ gright = 
 [module/left1]
 type = custom/text
 content-background = ${color.alfa}
-content-foreground = ${color.bubles}
+content-foreground = ${color.background}
 content = ${glyph.gleft}
 content-font = 2
 
 [module/right1]
 type = custom/text
 content-background = ${color.alfa}
-content-foreground = ${color.bubles}
+content-foreground = ${color.background}
 content = ${glyph.gright}
 content-font = 2
 
 [module/left_orange]
 type = custom/text
 content-background = ${color.alfa}
-content-foreground = ${color.bubles}
+content-foreground = ${color.background}
 content = ${glyph.gleft}
 content-font = 2
 
 [module/right_orange]
 type = custom/text
 content-background = ${color.alfa}
-content-foreground = ${color.bubles}
+content-foreground = ${color.background}
 content = ${glyph.gright}
 content-font = 2
 
 [module/left_violet]
 type = custom/text
 content-background = ${color.alfa}
-content-foreground = ${color.bubles}
+content-foreground = ${color.background}
 content = ${glyph.gleft}
 content-font = 2
 
 [module/right_violet]
 type = custom/text
 content-background = ${color.alfa}
-content-foreground = ${color.bubles}
+content-foreground = ${color.background}
 content = ${glyph.gright}
 content-font = 2
 
@@ -56,7 +56,7 @@ type = custom/text
 content = " "
 
 content-foreground = ${color.foreground}
-content-background = ${color.bubles}
+content-background = ${color.background}
 
 [module/dot]
 type = custom/text
@@ -83,7 +83,7 @@ content-padding = 0
 type = custom/text
 content = " "
 content-foreground = ${color.foreground_blue}
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-padding = 0
 content-font = 0
 click-left = "$HOME/.config/i3/rofi/launchers/type-3/launcher.sh"
@@ -106,10 +106,10 @@ format = <label>
 format-prefix = " "
 format-underline = ${color.foreground_violet}
 format-foreground = ${color.foreground_blue}
-format-background = ${color.bubles}
+format-background = ${color.background}
 label = %output%
 label-maxlen = 50
-label-background = ${color.bubles}
+label-background = ${color.background}
 
 #[module/alsa]
 #type = internal/alsa
@@ -121,10 +121,10 @@ label-background = ${color.bubles}
 #master-mixer = Master
 
 #format-volume = <ramp-volume> <label-volume>
-#format-volume-background = ${color.bubles}
+#format-volume-background = ${color.background}
 #format-volume-foreground = ${color.foreground_orange}
 #format-muted = <label-muted>
-#format-muted-background = ${color.bubles}
+#format-muted-background = ${color.background}
 
 #label-volume = %percentage%%
 #label-muted = 
@@ -142,7 +142,7 @@ type = internal/pulseaudio
 
 ;format-volume = <label-volume> <bar-volume>
 format-volume = <ramp-volume> <label-volume>
-format-volume-background = ${color.bubles}
+format-volume-background = ${color.background}
 format-volume-foreground = ${color.foreground_blue}
 label-volume = %percentage%%
 label-volume-foreground = ${color.foreground_orange}
@@ -168,7 +168,7 @@ use-actual-brightness = true
 enable-scroll = true
 
 format = <ramp> <label>
-format-background = ${color.bubles}
+format-background = ${color.background}
 
 label =%percentage%%
 label-foreground = ${color.foreground_blue}
@@ -192,26 +192,26 @@ time-format = %H:%M
 format-charging = <label-charging>
 format-charging-prefix = ""
 format-charging-prefix-foreground = ${color.foreground_blue}
-format-charging-prefix-background = ${color.bubles}
+format-charging-prefix-background = ${color.background}
 
 format-discharging = <label-discharging>
 format-discharging-prefix = ""
 format-discharging-prefix-foreground = ${color.pink}
-format-discharging-prefix-background = ${color.bubles}
+format-discharging-prefix-background = ${color.background}
 
 format-full = <label-full>
 format-full-prefix = 
 format-full-prefix-foreground = ${color.red}
-format-full-prefix-background = ${color.bubles}
+format-full-prefix-background = ${color.background}
 
 label-charging = " %percentage%%"
-label-charging-background = ${color.bubles}
+label-charging-background = ${color.background}
 
 label-discharging = " %percentage%%"
-label-discharging-background = ${color.bubles}
+label-discharging-background = ${color.background}
 
 label-full = " Full"
-label-full-background = ${color.bubles}
+label-full-background = ${color.background}
 
 [module/cpu]
 type = internal/cpu
@@ -220,7 +220,7 @@ interval = 1
 format = <label>
 format-prefix = 
 format-prefix-foreground = ${color.foreground_blue}
-format-background = ${color.bubles}
+format-background = ${color.background}
 
 label = " %percentage%%"
 label-foreground = ${color.foreground_orange}
@@ -240,7 +240,7 @@ time-alt = %H:%M:%S
 format = <label>
 format-prefix = " "
 format-prefix-foreground = ${color.foreground_orange}
-format-background = ${color.bubles}
+format-background = ${color.background}
 
 label = %date% %time%
 label-foreground = ${color.foreground_blue}
@@ -261,7 +261,7 @@ format-mounted-foreground = ${color.foreground_blue}
 format-unmounted = <label-unmounted>
 format-unmounted-prefix = 
 format-unmounted-prefix-foreground = ${color.foreground_orange}
-format-unmounted-background = ${color.bubles}
+format-unmounted-background = ${color.background}
 
 label-mounted = " %free%"
 label-mounted-background = ${color.foreground_blue}
@@ -294,29 +294,29 @@ format-font = 0
 
 label-mode = %mode%
 label-mode-padding = 1
-label-mode-background = ${color.bubles}
+label-mode-background = ${color.background}
 label-mode-foreground = ${color.foreground}
 
 label-focused = %icon%
 label-focused-foreground = ${color.foreground_violet}
-label-focused-background = ${color.bubles}
+label-focused-background = ${color.background}
 label-focused-underline =  ${color.foreground_violet}
 label-focused-padding = 1
 
 label-unfocused = %icon%
 label-unfocused-padding = 1
-label-unfocused-background = ${color.bubles}
+label-unfocused-background = ${color.background}
 label-unfocused-foreground = ${color.foreground_blue}
 
 label-visible = %icon%
 label-visible-underline = ${color.purple}
 label-visible-padding = 1
 label-visible-foreground = ${color.purple}
-label-visible-background = ${color.bubles}
+label-visible-background = ${color.background}
 
 label-urgent = %icon%
 label-urgent-foreground = ${color.red}
-label-urgent-background = ${color.bubles}
+label-urgent-background = ${color.background}
 label-urgent-padding = 1
 
 [module/keyboard]
@@ -329,7 +329,7 @@ format = <label-layout> <label-indicator>
 format-prefix = 
 format-prefix-foreground = ${color.foreground_orange}
 format-foreground = ${color.foreground_blue}
-format-background = ${color.bubles}
+format-background = ${color.background}
 
 label-layout = " %layout%"
 
@@ -343,7 +343,7 @@ interval = 1
 format = <label>
 format-prefix = 
 format-prefix-foreground = ${color.foreground_blue}
-format-background = ${color.bubles}
+format-background = ${color.background}
 
 label = " %gb_used%"
 label-foreground = ${color.foreground_orange}
@@ -362,15 +362,15 @@ type = internal/network
 interface = wlp0s20f3
 
 format-connected = %{A1:~/.config/i3/rofi/bin/network:}<label-connected>%{A}
-format-connected-background = ${color.bubles}
+format-connected-background = ${color.background}
 format-packetloss = <animation-packetloss>
 label-connected = %local_ip%
 label-connected-foreground = ${color.foreground_blue}
-label-connected-background = ${color.bubles}
+label-connected-background = ${color.background}
 format-connected-font = 0
 
 format-disconnected = "  NoDetect"
-format-disconnected-background = ${color.bubles}
+format-disconnected-background = ${color.background}
 #ramp-signal-0 = 
 #ramp-signal-1 = 
 #ramp-signal-2 = 
@@ -378,7 +378,7 @@ format-disconnected-background = ${color.bubles}
 #ramp-signal-4 = 
 #ramp-signal-5 = 
 #ramp-signal-foreground = ${color.foreground_orange}
-#ramp-signal-background = ${color.bubles}
+#ramp-signal-background = ${color.background}
 
 #format-connected-underline = ${color.foreground_violet}
 
@@ -408,11 +408,11 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = trueblack
 label-connected = "%{A1:networkmanager_dmenu &:} %{F#6C77BB}%{F-} %{F#2ac3de}%downspeed%%{A} %{F#6C77BB}%{F-} %{F#2ac3de}%upspeed%%{A}"
-label-connected-background = ${color.bubles}
+label-connected-background = ${color.background}
 label-connected-foreground = ${color.red}
 
 label-disconnected = "%{A1:networkmanager_dmenu &:} Offline%{A}"
-label-disconnected-background = ${color.bubles}
+label-disconnected-background = ${color.background}
 label-disconnected-foreground = ${color.red}
 
 [module/temperature]
@@ -424,7 +424,7 @@ warn-temperature = 80
 units = true
 
 format = <ramp> <label>
-format-background = ${color.bubles}
+format-background = ${color.background}
 format-foreground = ${color.foreground_blue}
 
 format-warn = <ramp> <label-warn>
@@ -450,7 +450,7 @@ format = <label>
 format-prefix = 
 format-prefix-foreground = ${color.foreground_blue}
 format-foreground = ${color.foreground}
-format-background = ${color.bubles}
+format-background = ${color.background}
 
 label = " %title%"
 label-maxlen = 30
@@ -465,7 +465,7 @@ interval = 1
 format-prefix = " "
 format-prefix-foreground = ${color.foreground_blue}
 format-foreground = ${color.foreground}
-format-background = ${color.bubles}
+format-background = ${color.background}
 
 [module/power]
 type = custom/text
@@ -473,14 +473,14 @@ content = " "
 content-padding = 0
 content-font = 0
 content-foreground = ${color.foreground_blue}
-content-background = ${color.bubles}
+content-background = ${color.background}
 click-left = "$HOME/.config/i3/rofi/powermenu/type-1/powermenu.sh"
 
 [module/pamac]
 type = custom/text
 content = " "
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_blue}
 click-left = /usr/bin/pamac-manager &
 
@@ -490,7 +490,7 @@ content = " "
 content-font = 0
 content-prefix-padding = 1
 content-foreground = ${color.foreground_blue}
-content-background = ${color.bubles}
+content-background = ${color.background}
 click-left = /usr/bin/blueman-manager &
 
 [module/uparch]
@@ -500,10 +500,10 @@ interval = 600
 format = <label>
 label-font = 0
 format-prefix = "ﮨ  "
-format-prefix-background = ${color.bubles}
+format-prefix-background = ${color.background}
 format-prefix-foreground = ${color.foreground_blue}
 format-foreground = ${color.foreground_orange}
-format-background = ${color.bubles}
+format-background = ${color.background}
 click-left = "urxvt -name Pacui -e ~/.bin/pacui &"
 
 
@@ -513,7 +513,7 @@ click-left = "urxvt -name Pacui -e ~/.bin/pacui &"
 type = custom/text
 content = "  Terminal"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_orange}
 content-padding = 0
 click-left = /usr/bin/xfce4-terminal --hide-menubar &
@@ -523,7 +523,7 @@ click-right =
 type = custom/text
 content = "  Firefox"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_orange}
 content-padding = 0
 click-left = /usr/bin/firefox &
@@ -532,7 +532,7 @@ click-left = /usr/bin/firefox &
 type = custom/text
 content = "  Thunar"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_orange}
 content-padding = 0
 click-left = /usr/bin/thunar &
@@ -541,7 +541,7 @@ click-left = /usr/bin/thunar &
 type = custom/text
 content = "  Discord"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_orange}
 content-padding = 0
 click-left = /usr/bin/discord &
@@ -550,7 +550,7 @@ click-left = /usr/bin/discord &
 type = custom/text
 content = "洞  Kdenlive"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_orange}
 content-padding = 0
 click-left = /usr/bin/kdenlive &
@@ -559,7 +559,7 @@ click-left = /usr/bin/kdenlive &
 type = custom/text
 content = "  Gimp"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/gimp &
@@ -568,7 +568,7 @@ click-left = /usr/bin/gimp &
 type = custom/text
 content = "  Krita"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/krita &
@@ -577,7 +577,7 @@ click-left = /usr/bin/krita &
 type = custom/text
 content = "  Blender"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/blender &
@@ -586,7 +586,7 @@ click-left = /usr/bin/blender &
 type = custom/text
 content = "ﬥ  Code"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/code &
@@ -595,7 +595,7 @@ click-left = /usr/bin/code &
 type = custom/text
 content = "  Telegram"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/telegram-desktop &
@@ -605,7 +605,7 @@ click-left = /usr/bin/telegram-desktop &
 type = custom/text
 content = "  Kodi"
 content-font = 0
-content-background = ${color.bubles}
+content-background = ${color.background}
 content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/kodi &
