@@ -33,11 +33,11 @@ sudo pacman -S ttf-iosevkaterm-nerd ttf-iosevka-nerd
 > В Arch-based дистрибутивах есть пакет (AUR):
 
 ```python
-yay -Ss oh-my-posh-bin
+yay -S oh-my-posh-bin
 ```
 
 ```python
-yay -Ss oh-my-zsh-git
+yay -S oh-my-zsh-git
 ```
 
 3. Установить [autotiling](https://github.com/nwg-piotr/autotiling)
