@@ -74,7 +74,6 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 <details>
   <summary>Открой</summary>
 
-  ```
 1. Еще есть тема оформления для blender. Папка соответствующая.
 ```python
 ~/.config/blender/Ваша версия/config/colorshemas/
@@ -85,7 +84,6 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 ```python
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 ```
-  ```
 </details>
 
 3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
@@ -105,7 +103,6 @@ $${\color{lightgreen}Управление \space окнами \space в \space �
 <details>
   <summary>Keybinds</summary>
 
-  ```
   В моем случае используется xfce4-terminal. Скриншотка Kazam. Zsh шел.
 
 1. Закрыть окно
@@ -177,20 +174,13 @@ mod+y
 Разделить:
 ```python
 mod+u
-```
-
-11. Полноэкранный режим окна и обратно
-
-```python
-mod+f
-```
+```Keybinds
 
 12. Скриншот экрана
 
 ```python
 Print
 ```
-  ```
 </details>
 
 > Подробнее смотреть в /.config/i3/keybinds
