@@ -75,7 +75,6 @@ $${\color{lightgreen}Что \space еще \space ?}$$
   <summary>Открой</summary>
 
   ```
-
 1. Еще есть тема оформления для blender. Папка соответствующая.
 ```python
 ~/.config/blender/Ваша версия/config/colorshemas/
@@ -86,7 +85,6 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 ```python
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 ```
-
   ```
 </details>
 
