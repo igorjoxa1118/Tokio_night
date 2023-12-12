@@ -1,11 +1,17 @@
-![](./screenshots/Screen.png)
-![](./screenshots/Terminal.png)
-![](./screenshots/AppMenu.png)
-![](./screenshots/FastMenu.png)
-![](./screenshots/PowerMenu.png)
-![](./screenshots/Thunar.png)
-![](./screenshots/Blender.png)
-![](./screenshots/Telegram.png) 
+## Information
+
+<img src="https://github.com/igorjoxa1118/Tokio_night/blob/main/screenshots/Screen.png?raw=true" alt="Rice Showcase" align="right" width="400px">
+
+- **OS:** [Arch Linux](https://archlinux.org)
+- **WM:** [i3-gaps](https://github.com/Airblader/i3)
+- **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
+- **Fonts:** [Iosevka Term](https://github.com/be5invis/Iosevka)
+- **Bar:** [polybar](https://github.com/polybar/polybar)
+- **Shell:** [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
+- **Compositor:** [picom](https://github.com/yshui/picom)
+- **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
+- **Notification Deamon:** [dunst](https://github.com/dunst-project/dunst)
+- **Splitt terminal:** [autotiling](https://github.com/nwg-piotr/autotiling)
 
 $${\color{lightgreen}Необходимые \space условия \space путей, \space для \space корректной \space работы.}$$
 
@@ -117,4 +123,13 @@ $${\color{lightgreen}Управление \space окнами \space в \space �
 | `Mod + U`              | Разделить закладки                       |
 | `Print`                | Скриншот экрана                          |
 
-> Подробнее смотреть в /.config/i3/keybinds
+> Подробнее смотреть в ~/.config/i3/keybinds
+
+![](./screenshots/Screen.png)
+![](./screenshots/Terminal.png)
+![](./screenshots/AppMenu.png)
+![](./screenshots/FastMenu.png)
+![](./screenshots/PowerMenu.png)
+![](./screenshots/Thunar.png)
+![](./screenshots/Blender.png)
+![](./screenshots/Telegram.png)
