@@ -46,7 +46,7 @@ yay -S autotiling
 
 5. Сделать записи в свой текущий i3/config. 
 
->В случае земены config файла своего на мой, эти записи делать не нужно.
+>В случае земены содепжимого, эти записи делать не нужно.
 
 ```python
 exec_always --no-startup-id "$HOME/.config/i3/polybar/Tokio_night/launch.sh"
@@ -69,6 +69,12 @@ $${\color{red}!! ВАЖНО !!}$$
 
 $${\color{lightgreen}Что \space еще \space ?}$$
 
+> В случае земены содержимого, эти записи делать не нужно.
+<details>
+  <summary>Keybinds</summary>
+
+  ```
+
 1. Еще есть тема оформления для blender. Папка соответствующая.
 ```python
 ~/.config/blender/Ваша версия/config/colorshemas/
@@ -79,6 +85,9 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 ```python
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 ```
+
+  ```
+</details>
 
 3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
 
@@ -186,4 +195,3 @@ Print
 </details>
 
 > Подробнее смотреть в /.config/i3/keybinds
-
