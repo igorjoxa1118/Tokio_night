@@ -127,6 +127,7 @@ $${\color{lightgreen}Управление \space окнами \space в \space �
 
 <details>
   <summary>Screenshots</summary>
+
 ![](./screenshots/Screen.png)
 ![](./screenshots/Terminal.png)
 ![](./screenshots/AppMenu.png)
@@ -135,4 +136,5 @@ $${\color{lightgreen}Управление \space окнами \space в \space �
 ![](./screenshots/Thunar.png)
 ![](./screenshots/Blender.png)
 ![](./screenshots/Telegram.png)
+
 </details>
