@@ -70,6 +70,7 @@ $${\color{red}!! ВАЖНО !!}$$
 $${\color{lightgreen}Что \space еще \space ?}$$
 
 > В случае земены содержимого, эти записи делать не нужно.
+
 <details>
   <summary>Keybinds</summary>
 
