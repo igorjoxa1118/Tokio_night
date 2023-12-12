@@ -4,7 +4,7 @@
 
 - **OS:** [Arch Linux](https://archlinux.org)
 - **WM:** [i3-gaps](https://github.com/Airblader/i3)
-- **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
+- **Terminal:** [Xfce4-Terminal](https://docs.xfce.org/apps/terminal/start)
 - **Fonts:** [Iosevka Term](https://github.com/be5invis/Iosevka)
 - **Bar:** [polybar](https://github.com/polybar/polybar)
 - **Shell:** [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
