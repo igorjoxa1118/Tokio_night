@@ -13,7 +13,7 @@
 - **Notification Deamon:** [dunst](https://github.com/dunst-project/dunst)
 - **Splitt terminal:** [autotiling](https://github.com/nwg-piotr/autotiling)
 
-Зависимости!
+Нужные пакеты!
 
 ```python
 sudo pacman -S dialog cmus xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
