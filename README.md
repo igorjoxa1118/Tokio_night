@@ -13,11 +13,13 @@
 - **Notification Deamon:** [dunst](https://github.com/dunst-project/dunst)
 - **Splitt terminal:** [autotiling](https://github.com/nwg-piotr/autotiling)
 
-Нужные пакеты!
+Нужные пакеты! Если у вас имется что-то из списка, то устанавливайте те, которых у вас нету.
 
 ```python
 sudo pacman -S dialog cmus xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
 ```
+$${\color{red}!! ВАЖНО !!}$$ 
+Обязательсно сделать backup своих конфигуроций.
 
 $${\color{lightgreen}Необходимые \space условия \space путей, \space для \space корректной \space работы.}$$
 
@@ -25,14 +27,9 @@ $${\color{lightgreen}Необходимые \space условия \space пут�
 1. Содержимое папки user нужно закинуть в домашний каталог "~/" 
 > polybar, picom и rofi уже должны быть установлены в вашей системе 
 
-$${\color{red}!! ВАЖНО !!}$$ 
+$${\color{red}!! ВАЖНО !!}$$
+
 > Каталоги polybar и rofi должны быть тут ~/.config/i3
-
-> В Arch-based дистрибутивах есть пакеты:
-
-```python
-sudo pacman -S ttf-iosevkaterm-nerd ttf-iosevka-nerd
-```
 
 2. Найти и установить [ohmyposh](https://ohmyposh.dev/docs/installation/linux) и [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) Не обязательно, если вы не хотите. Но внешний вид терминала, у вас, может быть другим.
 
