@@ -19,7 +19,7 @@
 sudo pacman -S dialog cmus xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
 ```
 $${\color{red}!! ВАЖНО !!}$$ 
-Обязательсно сделать backup своих конфигуроций.
+Обязательсно сделать backup своих конфигураций.
 
 $${\color{lightgreen}Необходимые \space условия \space путей, \space для \space корректной \space работы.}$$
 
