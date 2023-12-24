@@ -2,7 +2,7 @@
 
 <img src="https://github.com/igorjoxa1118/Tokio_night/blob/main/screenshots/Screen.png?raw=true" alt="Rice Showcase" align="right" width="400px">
 
-- **OS:** [Arch Linux](https://archlinux.org)
+- **OS:** [Garuda Linux](https://garudalinux.org/)
 - **WM:** [i3-gaps](https://github.com/Airblader/i3)
 - **Terminal:** [Xfce4-Terminal](https://docs.xfce.org/apps/terminal/start)
 - **Fonts:** [Iosevka Term](https://github.com/be5invis/Iosevka)
