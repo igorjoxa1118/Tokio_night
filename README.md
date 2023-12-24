@@ -12,6 +12,8 @@
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
 - **Notification Deamon:** [dunst](https://github.com/dunst-project/dunst)
 - **Splitt terminal:** [autotiling](https://github.com/nwg-piotr/autotiling)
+- **Video Card:** [Nvidia](https://developer.nvidia.com/nvidia-system-management-interface)
+- **Backlight:** [Nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface)
 
 Нужные пакеты! Если у вас имеется что-то из списка, то устанавливайте те, которых у вас нету.
 

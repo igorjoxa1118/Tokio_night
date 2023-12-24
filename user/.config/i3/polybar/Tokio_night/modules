@@ -336,17 +336,36 @@ label-layout = " %layout%"
 label-indicator-on = "%name%"
 label-indicator-on-foreground = ${color.cyan}
 
-[module/memory]
-type = internal/memory
-interval = 1
+#[module/memory]
+#type = internal/memory
+#interval = 1
 
-format = <label>
-format-prefix = 
+#format = <label>
+#format-prefix = 
+#format-prefix-foreground = ${color.foreground_blue}
+#format-background = ${color.background}
+
+#label = " %gb_used%"
+#label-foreground = ${color.foreground_orange}
+
+[module/memory]
+type = custom/script
+exec = ~/.config/i3/scripts/memory.sh
+click-left = ~/.config/i3/scripts/memory.sh --popup
+format-prefix = " "
 format-prefix-foreground = ${color.foreground_blue}
 format-background = ${color.background}
-
-label = " %gb_used%"
 label-foreground = ${color.foreground_orange}
+
+[module/system-nvidia-smi]
+type = custom/script
+exec = ~/.config/i3/scripts/system-nvidia-smi.sh
+interval = 10
+format-prefix = " "
+format-prefix-foreground = ${color.foreground_blue}
+format-background = ${color.background}
+label-foreground = ${color.foreground_orange}
+
 
 [module/wired-network]
 type = internal/network
@@ -416,32 +435,16 @@ label-disconnected-background = ${color.background}
 label-disconnected-foreground = ${color.red}
 
 [module/temperature]
-type = internal/temperature
-interval = 0.5
+type = custom/script
+exec = nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits
+interval = 10
 
-thermal-zone = 0
-warn-temperature = 80
-units = true
-
-format = <ramp> <label>
-format-background = ${color.background}
-format-foreground = ${color.foreground_blue}
-
-format-warn = <ramp> <label-warn>
-format-warn-background = ${color.red}
-
-label = %temperature-c%
+label = %output%°C
+format-prefix = " "
+format-prefix-background = ${color.background}
+format-prefix-foreground = ${color.foreground_blue}
 label-foreground = ${color.foreground_orange}
-
-label-warn = "%temperature-c%"
-label-warn-foreground = ${color.red}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-ramp-foreground = ${color.foreground_blue}
+label-background = ${color.background}
 
 [module/title]
 type = internal/xwindow
