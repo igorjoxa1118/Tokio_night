@@ -14,6 +14,8 @@
 - **Splitt terminal:** [autotiling](https://github.com/nwg-piotr/autotiling)
 - **Video Card:** [Nvidia](https://developer.nvidia.com/nvidia-system-management-interface)
 - **Backlight:** [Nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface)
+- **Music Player:** [Cmus](https://cmus.github.io/)
+- **Music Player Youtube Playlists:** [Mpv](https://mpv.io/)
 
 Нужные пакеты! Если у вас имеется что-то из списка, то устанавливайте те, которых у вас нету.
 
@@ -104,6 +106,15 @@ colorscheme Tokio_night
 ```
 
 5. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+
+6. Плеер mpv умеет загрузать плейлист из Youtube. Нужно лишь заменить ссылку плейлиста на свою. Файлик тут:
+> .config/i3/scripts/mpv-youtube-playlist.sh
+   
+   Для примера... Замени https://www.... на свою:
+
+```python
+mpv -ao=pulse --no-video --shuffle --term-playing-msg='Title: ${media-title}' "https://www.youtube.com/playlist?list=PLQQ-A7Ds57kTCJ750usNrWbP2rt4SIpfy"
+```
 
 $${\color{lightgreen}Управление \space окнами \space в \space случае \space замены \space config.}$$
 

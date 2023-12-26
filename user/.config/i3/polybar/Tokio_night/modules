@@ -88,29 +88,6 @@ content-padding = 0
 content-font = 0
 click-left = "$HOME/.config/i3/rofi/launchers/type-3/launcher.sh"
 
-[module/cmus]
-type = custom/script
-
-exec = ~/.config/i3/polybar/Tokio_night/polybar-cmus/cmus.sh
-exec-if = pgrep -x cmus
-interval = 1
-
-click-left = cmus-remote --next
-click-right = cmus-remote --prev
-click-middle = cmus-remote --pause
-scroll-up = cmus-remote --volume +5%
-scroll-down = cmus-remote --volume -5%
-
-label-font = 0
-format = <label>
-format-prefix = " "
-format-underline = ${color.foreground_violet}
-format-foreground = ${color.foreground_blue}
-format-background = ${color.background}
-label = %output%
-label-maxlen = 50
-label-background = ${color.background}
-
 #[module/alsa]
 #type = internal/alsa
 #interval = 5
@@ -615,3 +592,65 @@ click-left = /usr/bin/kodi &
 
 ########################################
 ########################################
+
+[module/mpv-youtube-playlist]
+type = custom/text
+content = " "
+content-font = 0
+content-background = ${color.background}
+content-foreground = ${color.foreground_blue}
+content-padding = 0
+click-left = "$HOME/.config/i3/scripts/mpv-youtube-playlist.sh"
+click-right = "$HOME/.config/i3/scripts/mpv-youtube-kill.sh"
+
+[module/mpv]
+type = custom/script
+exec-if = pidof mpv 
+exec = ~/.config/i3/scripts/polybar-mpv/mpv-zscroll.sh
+tail = true
+click-left = echo 'cycle pause' | socat - /tmp/mpv_socket
+click-right =  ~/.config/i3/scripts/mpv-youtube-kill.sh
+scroll-up = ~/.config/i3/scripts/polybar-mpv/mpv.sh --volume-up
+scroll-down = ~/.config/i3/scripts/polybar-mpv/mpv.sh --volume-down
+format-foreground = ${color.foreground_blue}
+format-background = ${color.background}
+format-underline = ${color.foreground_blue}
+
+[module/mpv-prev]
+type = custom/script
+exec-if = pidof mpv
+exec = echo " "
+click-left = echo 'playlist-prev' | socat - /tmp/mpv_socket
+format-foreground = ${color.foreground_blue}
+format-background = ${color.background}
+
+[module/mpv-next]
+type = custom/script
+exec-if = pidof mpv
+exec = echo " "
+click-left = echo 'playlist-next' | socat - /tmp/mpv_socket
+format-foreground = ${color.foreground_blue}
+format-background = ${color.background}
+
+[module/cmus]
+type = custom/script
+
+exec = ~/.config/i3/polybar/Tokio_night/polybar-cmus/cmus.sh
+exec-if = pgrep -x cmus
+interval = 1
+
+click-left = cmus-remote --next
+click-right = cmus-remote --prev
+click-middle = cmus-remote --pause
+scroll-up = cmus-remote --volume +5%
+scroll-down = cmus-remote --volume -5%
+
+label-font = 0
+format = <label>
+format-prefix = " "
+format-underline = ${color.foreground_violet}
+format-foreground = ${color.foreground_blue}
+format-background = ${color.background}
+label = %output%
+label-maxlen = 50
+label-background = ${color.background}
