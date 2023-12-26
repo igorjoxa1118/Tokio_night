@@ -1,5 +1,15 @@
 #!/bin/bash
 
+while :
+     do
+       sleep 1
+     if ! pidof cmus > /dev/null
+        then
+            killall zscroll
+            exit
+     fi
+done &
+
 prepend_zero () {
         seq -f "%02g" $1 $1
 }
