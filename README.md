@@ -31,7 +31,7 @@ yay -S autotiling
 Пакеты из дефолтных реп
 
 ```python
-sudo pacman -S dialog cmus rsync mpv jq socat xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
+sudo pacman -S dialog yad cmus rsync mpv jq socat xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
 ```
 
 $${\color{red}!! ВАЖНО !!}$$ 
