@@ -19,9 +19,6 @@
 
 Нужные пакеты! Если у вас имеется что-то из списка, то устанавливайте те, которых у вас нету.
 
-```python
-sudo pacman -S dialog cmus rsync mpv jq socat xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
-```
 Гит-пакеты
 
 ```python
@@ -29,6 +26,11 @@ yay -S zscroll-git
 yay -S oh-my-zsh-git
 yay -S oh-my-posh-bin
 yay -S autotiling
+```
+Пакеты из дефолтных реп
+
+```python
+sudo pacman -S dialog cmus rsync mpv jq socat xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
 ```
 
 $${\color{red}!! ВАЖНО !!}$$ 
