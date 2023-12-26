@@ -600,8 +600,8 @@ content-font = 0
 content-background = ${color.background}
 content-foreground = ${color.foreground_blue}
 content-padding = 0
-click-left = "$HOME/.config/i3/scripts/mpv-youtube-playlist.sh" &
-click-right = "$HOME/.config/i3/scripts/mpv-youtube-kill.sh" &
+click-left = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-playlist.sh" &
+click-right = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
 
 [module/mpv]
 type = custom/script
