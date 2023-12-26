@@ -20,7 +20,7 @@
 Нужные пакеты! Если у вас имеется что-то из списка, то устанавливайте те, которых у вас нету.
 
 ```python
-sudo pacman -S dialog cmus xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
+sudo pacman -S dialog cmus mpv xfce4-terminal thunar polybar rofi dunst nitrogen fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
 ```
 $${\color{red}!! ВАЖНО !!}$$ 
 Обязательсно сделать backup своих конфигураций.
