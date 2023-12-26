@@ -104,7 +104,7 @@ colorscheme Tokio_night
 
 5. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
-6. Плеер mpv умеет загружать музыкальный плейлист из Youtube. Иконка присутствует на polybar
+6. Плеер mpv умеет искать треки и загружать музыкальный плейлист из Youtube. Иконка присутствует на polybar
 
 $${\color{lightgreen}Управление \space окнами \space в \space случае \space замены \space config.}$$
 
