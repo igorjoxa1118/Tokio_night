@@ -112,7 +112,7 @@ colorscheme Tokio_night
 
 5. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
-6. Плеер mpv умеет загрузать плейлист из Youtube. Нужно лишь заменить ссылку плейлиста на свою. Файлик тут:
+6. Плеер mpv умеет загружать музыкальный плейлист из Youtube. Нужно лишь заменить ссылку плейлиста на свою. Файлик тут:
 > .config/i3/scripts/mpv-youtube-playlist.sh
    
    Для примера... Замени https://www.... на свою:
