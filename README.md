@@ -26,8 +26,8 @@ sudo pacman -S dialog cmus rsync mpv jq socat xfce4-terminal thunar polybar rofi
 
 ```python
 yay -S zscroll-git
-yay -S oh-my-posh-bin
 yay -S oh-my-zsh-git
+yay -S oh-my-posh-bin
 yay -S autotiling
 ```
 
