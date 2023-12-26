@@ -16,6 +16,7 @@
 - **Backlight:** [Nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface)
 - **Music Player:** [Cmus](https://cmus.github.io/)
 - **Music Player Youtube Playlists:** [Mpv](https://mpv.io/)
+- **Multimedia framework:** [PipeWire](https://pipewire.org/)
 
 Нужные пакеты! Если у вас имеется что-то из списка, то устанавливайте те, которых у вас нету.
 
