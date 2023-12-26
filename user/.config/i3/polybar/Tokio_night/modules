@@ -209,7 +209,7 @@ interval = 1
 ; Change it for yourself
 ; https://en.cppreference.com/w/cpp/io/manip/put_time
 
-date = %a %d %b
+date = %d-%m-%y
 time = %H:%M
 date-alt = %A %d %B %Y
 time-alt = %H:%M:%S
@@ -634,10 +634,10 @@ format-background = ${color.background}
 
 [module/cmus]
 type = custom/script
-
 exec = ~/.config/i3/polybar/Tokio_night/polybar-cmus/cmus.sh
 exec-if = pgrep -x cmus
 interval = 1
+tail = true
 
 click-left = cmus-remote --next
 click-right = cmus-remote --prev

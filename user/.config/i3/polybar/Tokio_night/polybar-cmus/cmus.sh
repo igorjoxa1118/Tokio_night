@@ -6,6 +6,8 @@ prepend_zero () {
 
 artist=$(echo -n $(cmus-remote -C status | grep "tag artist" | cut -c 12-))
 
+main_function() {
+
 if [[ $artist = *[!\ ]* ]]; then
         song=$(echo -n $(cmus-remote -C status | grep title | cut -c 11-))
         position=$(cmus-remote -C status | grep position | cut -c 10-)
@@ -18,3 +20,6 @@ if [[ $artist = *[!\ ]* ]]; then
 else
         echo
 fi
+}
+
+( main_function | zscroll --length 30 --delay 0.3 ) & wait  
