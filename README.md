@@ -24,6 +24,7 @@
 
 ```python
 yay -S zscroll-git
+yay -S ytdlp-gui
 yay -S oh-my-zsh-git
 yay -S oh-my-posh-bin
 yay -S autotiling
