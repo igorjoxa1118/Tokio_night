@@ -137,5 +137,6 @@ $${\color{lightgreen}Управление \space окнами \space в \space �
 ![](./screenshots/Thunar.png)
 ![](./screenshots/Blender.png)
 ![](./screenshots/Telegram.png)
+![](./screenshots/Firefox.png)
 
 </details>
