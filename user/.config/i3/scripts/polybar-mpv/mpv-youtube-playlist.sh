@@ -2,14 +2,23 @@
 
 #Serash youtube
 
+function close_exit() {
+   killall mpv
+   killall yad
+}
+
+export -f close_exit
+
 input=$(yad \
- --title="" \
- --text="Please enter your details:" \
- --image="/usr/share/icons/Tango/scalable/emotes/face-smile.svg" \
+ --title="Serash on youtube" \
+ --text="Press Enter:" \
+ --image="$HOME/.config/i3/scripts/polybar-mpv/icons/youtube.svg" \
+ --icon-size=48 \
  --form \
- --field="Search your track or enter playlist URL " \
+ --field="  Your track or playlist URL:  " \
+ --button="Exit:bash -c close_exit" \
  --fixed \
- --width=600 \
+ --width=800 \
  --height=100 \
  --separator="\t")
  
