@@ -67,11 +67,16 @@ function close_exit_sec() {
    killall yad
 }
 
+function close() {
+   killall yad
+}
+
 export -f mpv_audio
 export -f mpv_video
 export -f close_exit_sec
+export -f close
 
-yad \
+endoff=$(yad \
    --title="Search-tube" \
    --text="What are you want?" \
    --image="$HOME/.config/i3/scripts/polybar-mpv/icons/youtube.svg" \
@@ -81,5 +86,7 @@ yad \
    --height=100 \
    --button-align=center \
    --button="Exit:bash -c close_exit_sec" \
+   --button="Close:bash -c close" \
    --button="Audio:bash -c mpv_audio" \
-   --button="Video:bash -c mpv_video" 
+   --button="Video:bash -c mpv_video" \
+   --separator="\t")
