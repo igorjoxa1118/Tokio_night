@@ -601,17 +601,18 @@ content-background = ${color.background}
 content-foreground = ${color.foreground_blue}
 content-padding = 0
 click-left = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-playlist.sh" &
-click-right = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
+click-middle = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
 
 [module/mpv]
 type = custom/script
 exec-if = pidof mpv 
-exec = ~/.config/i3/scripts/polybar-mpv/mpv-zscroll.sh
+exec = "$HOME//.config/i3/scripts/polybar-mpv/mpv-zscroll.sh"
 tail = true
 click-left = echo 'cycle pause' | socat - /tmp/mpv_socket
-click-right =  ~/.config/i3/scripts/mpv-youtube-kill.sh
-scroll-up = ~/.config/i3/scripts/polybar-mpv/mpv.sh --volume-up
-scroll-down = ~/.config/i3/scripts/polybar-mpv/mpv.sh --volume-down
+click-middle = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
+click-right =  "$HOME/.config/i3/scripts/mpv-youtube-kill.sh"
+scroll-up = "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh" --volume-up
+scroll-down = "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh" --volume-down
 format-foreground = ${color.foreground_blue}
 format-background = ${color.background}
 format-underline = ${color.foreground_blue}
@@ -634,7 +635,7 @@ format-background = ${color.background}
 
 [module/cmus]
 type = custom/script
-exec = ~/.config/i3/polybar/Tokio_night/polybar-cmus/cmus.sh
+exec = "$HOME/.config/i3/polybar/Tokio_night/polybar-cmus/cmus.sh"
 exec-if = pgrep -x cmus
 interval = 1
 tail = true

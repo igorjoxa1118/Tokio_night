@@ -10,7 +10,7 @@ function close_exit() {
 export -f close_exit
 
 input=$(yad \
- --title="Serash on youtube" \
+ --title="Search-tube" \
  --text="Press Enter:" \
  --image="$HOME/.config/i3/scripts/polybar-mpv/icons/youtube.svg" \
  --icon-size=48 \
