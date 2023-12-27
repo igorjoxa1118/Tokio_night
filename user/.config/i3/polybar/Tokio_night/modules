@@ -606,11 +606,10 @@ click-middle = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
 [module/mpv]
 type = custom/script
 exec-if = pidof mpv 
-exec = "$HOME//.config/i3/scripts/polybar-mpv/mpv-zscroll.sh"
+exec = "$HOME/.config/i3/scripts/polybar-mpv/mpv-zscroll.sh"
 tail = true
 click-left = echo 'cycle pause' | socat - /tmp/mpv_socket
 click-middle = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
-click-right =  "$HOME/.config/i3/scripts/mpv-youtube-kill.sh"
 scroll-up = "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh" --volume-up
 scroll-down = "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh" --volume-down
 format-foreground = ${color.foreground_blue}
