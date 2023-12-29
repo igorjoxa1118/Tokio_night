@@ -5,6 +5,7 @@
 - **OS:** [Garuda Linux](https://garudalinux.org/)
 - **WM:** [i3-gaps](https://github.com/Airblader/i3)
 - **Terminal:** [Kitty](https://sw.kovidgoyal.net/kitty/)
+- **Text Editor:** [Micro](https://micro-editor.github.io/)
 - **Fonts:** [Iosevka Term](https://github.com/be5invis/Iosevka)
 - **Bar:** [Polybar](https://github.com/polybar/polybar)
 - **Shell:** [Ohmyposh](https://ohmyposh.dev/docs/installation/linux)
