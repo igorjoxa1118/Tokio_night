@@ -496,7 +496,7 @@ content-font = 0
 content-background = ${color.background}
 content-foreground = ${color.foreground_orange}
 content-padding = 0
-click-left = /usr/bin/xfce4-terminal --hide-menubar &
+click-left = /usr/bin/kitty &
 click-right =
 
 [module/web]
