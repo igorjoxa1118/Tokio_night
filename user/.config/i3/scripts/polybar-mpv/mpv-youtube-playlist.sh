@@ -1,6 +1,46 @@
 #!/usr/bin/bash
 
+#{1..$(echo $(<"/home/vir0id/log_play_info") | wc -l ~/log_play_info | awk '{print $1}')}
 #Serash youtube
+
+log_play_info="$HOME/log_play_info"
+
+function info_playlist() {
+ mpv --fs -ao=pulse --no-video --shuffle --script-opts-append=osc-visibility=always --term-playing-msg='Title: ${media-title}' "$input" 2>&1 | yad \
+ --image="$HOME/.config/i3/scripts/polybar-mpv/icons/youtube.svg" \
+ --geometry=20x40+500+400 \
+ --fontname="Iosevka Term Regular 12" \
+ --wrap --justify="center" \
+ --margins=1 \
+ --tail \
+ --editable \
+ --fore="#bb9af7" \
+ --back="#16161E" \
+ --listen \
+ --auto-close \
+ --auto-kill \
+ --monitor \
+ --text-info &
+}
+
+function info_track() {
+ mpv --fs ytdl://ytsearch:"$input" --no-video -ao=pulse --script-opts-append=osc-visibility=always --term-playing-msg='Title: ${media-title}' 2>&1 | yad \
+ --image="$HOME/.config/i3/scripts/polybar-mpv/icons/youtube.svg" \
+  --geometry=20x40+500+400 \
+  --fontname="Iosevka Term Regular 12" \
+  --wrap \
+  --justify="center" \
+  --margins=1 \
+  --tail \
+  --editable \
+  --fore="#bb9af7" \
+  --back="#16161E" \
+  --listen \
+  --auto-close \
+  --auto-kill \
+  --monitor \
+  --text-info &
+}
 
 function mpv_audio() {
 
@@ -10,6 +50,8 @@ function close_exit() {
 }
 
 export -f close_exit
+export -f info_playlist
+export -f info_track
 
 input=$(yad \
  --title="Search-tube" \
@@ -25,9 +67,9 @@ input=$(yad \
  --separator="\t")
  
 if [[ $input =~ "https" ]]; then
-   mpv -ao=pulse --no-video --shuffle --term-playing-msg='Title: ${media-title}' "$input"
+   info_playlist
 else
-   mpv ytdl://ytsearch:"$input" --no-video -ao=pulse --term-playing-msg='Title: ${media-title}'
+   info_track
 fi
 
 }
@@ -75,6 +117,8 @@ export -f mpv_audio
 export -f mpv_video
 export -f close_exit_sec
 export -f close
+export -f info_playlist
+export -f info_track
 
 endoff=$(yad \
    --title="Search-tube" \
@@ -90,3 +134,4 @@ endoff=$(yad \
    --button="!$HOME/.config/i3/scripts/polybar-mpv/icons/audio-volume-medium.svg!Audio:bash -c mpv_audio" \
    --button="!$HOME/.config/i3/scripts/polybar-mpv/icons/filmgrain.svg!Video:bash -c mpv_video" \
    --separator="\t")
+
