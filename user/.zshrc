@@ -240,3 +240,5 @@ eval "$(mcfly init zsh)"
 neofetch
 ## Posh theme
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
+# Custom exports
+export MICRO_CONFIG_HOME=$HOME/.config/micro
