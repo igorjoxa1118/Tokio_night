@@ -24,7 +24,7 @@
 Пакеты из дефолтных реп
 
 ```python
-sudo pacman -S dialog yad cmus rsync mpv jq socat kitty lst thunar polybar rofi dunst nitrogen picom yt-dlp fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
+sudo pacman -S dialog yad cmus rsync mpv jq socat kitty lsd ranger thunar polybar rofi dunst nitrogen picom yt-dlp fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search zsh-syntax-highlighting starship
 ```
 
 Гит-пакеты
