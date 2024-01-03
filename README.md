@@ -74,9 +74,21 @@ exec_always --no-startup-id autotiling
 
 </details>
 
-3. Установить обоину из .wallpapers туда, куда вам нужно
+3. Изменить мой .zshrc
+```python
+# Custom exports
+export MICRO_CONFIG_HOME=/home/vir0id/.config/micro
+```
+на
 
-4. Перезапустить i3
+```python
+# Custom exports
+export MICRO_CONFIG_HOME=/home/ВАШ-ЮЗЕР/.config/micro
+```
+
+4. Установить обоину из .wallpapers туда, куда вам нужно
+
+5. Перезапустить i3
 
 $${\color{red}!! ВАЖНО !!}$$
 В любом случае, все модули polybar, которые присутствуют у меня, дожны быть настроены в соответствии с вашими желаниями и вашей машиной.
@@ -88,15 +100,9 @@ $${\color{lightgreen}Что \space еще \space ?}$$
 ~/.config/blender/Ваша версия/config/colorshemas/
 ```
 
-2. Чтоб приминить тему poshthemes, нужно отредактировать ваш .zshrc добавив строку в самый низ
+2. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
 
-```python
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
-```
-
-3. Ссылка на тему [Telegram](https://t.me/addtheme/pIK0pC3eIoopeaG7)
-
-4. Цветовая тема для плеера cmus.
+3. Цветовая тема для плеера cmus.
 
 > Открыть плеер, нажать ":" и вставить это:
 
@@ -104,9 +110,9 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 colorscheme Tokio_night
 ```
 
-5. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+4. Ссылка на тему [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tokio_night/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
-6. Плеер mpv умеет искать треки и загружать музыкальный плейлист из Youtube. Иконка присутствует на polybar
+5. Плеер mpv умеет искать треки и загружать музыкальный плейлист из Youtube. Иконка присутствует на polybar
 
 $${\color{lightgreen}Управление \space окнами \space в \space случае \space замены \space config.}$$
 
