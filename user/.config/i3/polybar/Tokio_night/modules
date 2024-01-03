@@ -654,3 +654,19 @@ format-background = ${color.background}
 label = %output%
 label-maxlen = 50
 label-background = ${color.background}
+
+#############################
+###  Tray
+
+[module/systray]	
+type = custom/text
+content = "TRAY"  
+content-background = ${color.BACKGROUND}
+content-foreground = ${color.RED}
+click-right = sub_bar
+click-left = sub_bar
+
+
+[module/placeholder]
+type = custom/text
+content = "..."

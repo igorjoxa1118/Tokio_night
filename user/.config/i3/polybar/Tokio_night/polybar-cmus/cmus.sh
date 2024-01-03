@@ -17,4 +17,4 @@ if [[ $artist = *[!\ ]* ]]; then
         echo -n "$artist - $song [$minutes1:$seconds1/$minutes2:$seconds2]"
 else
         echo
-fi 
+fi

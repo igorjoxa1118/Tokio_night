@@ -226,6 +226,13 @@ alias please='sudo'
 alias tb='nc termbin.com 9999'
 alias upd="/usr/bin/update"
 
+# Helpful aliases
+alias ls='lsd'
+alias la='lsd --almost-all --long'
+alias llm='lsd --timesort --long'
+alias lS='lsd --oneline --classic'
+alias lt='lsd --tree --depth=2'
+
 # Replace yay with paru if installed
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
@@ -241,4 +248,4 @@ neofetch
 ## Posh theme
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/Tokio_night.omp.json)"
 # Custom exports
-export MICRO_CONFIG_HOME=$HOME/.config/micro
+export MICRO_CONFIG_HOME=/home/vir0id/.config/micro

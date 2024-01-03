@@ -15,5 +15,5 @@ zscroll --length 25 --delay 0.3 \
 	--match-command "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh --status" \
 	--match-text "true" "--before-text ' ' --scroll false" \
 	--match-text "false" "--before-text ' ' --scroll true" \
-	--update-check true "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh --title" &
+	--update-check "true" "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh --title" &
 wait
