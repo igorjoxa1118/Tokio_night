@@ -15,7 +15,7 @@
 - **Splitt terminal:** [Autotiling](https://github.com/nwg-piotr/autotiling)
 - **Video Card:** [Nvidia](https://developer.nvidia.com/nvidia-system-management-interface)
 - **Backlight:** [Nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface)
-- **Music Player:** [Cmus](https://cmus.github.io/)
+- **Music Player:** [Musikcube](https://github.com/clangen/musikcube)
 - **Music Player Youtube Playlists:** [Mpv](https://mpv.io/)
 - **Multimedia framework:** [PipeWire](https://pipewire.org/)
 
@@ -35,6 +35,7 @@ yay -S ytdlp-gui
 yay -S oh-my-zsh-git
 yay -S oh-my-posh-bin
 yay -S autotiling
+yay -S musikcube
 ```
 
 $${\color{red}!! ВАЖНО !!}$$ 
