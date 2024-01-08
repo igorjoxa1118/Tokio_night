@@ -24,7 +24,7 @@
 Пакеты из дефолтных реп
 
 ```python
-sudo pacman -S dialog yad cmus rsync mpv jq socat kitty lsd ranger micro thunar polybar rofi dunst nitrogen picom yt-dlp fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search starship
+sudo pacman -S dialog yad cmus rsync mpv jq socat kitty lsd ranger micro blueman thunar polybar rofi dunst nitrogen picom yt-dlp fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-history-substring-search starship
 ```
 
 Гит-пакеты
@@ -36,6 +36,7 @@ yay -S oh-my-zsh-git
 yay -S oh-my-posh-bin
 yay -S autotiling
 yay -S musikcube
+yay -S pamac-aur
 ```
 
 $${\color{red}!! ВАЖНО !!}$$ 
