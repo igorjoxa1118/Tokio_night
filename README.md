@@ -37,6 +37,7 @@ yay -S oh-my-posh-bin
 yay -S autotiling
 yay -S musikcube
 yay -S pamac-aur
+yay -S kazam
 ```
 
 $${\color{red}!! ВАЖНО !!}$$ 

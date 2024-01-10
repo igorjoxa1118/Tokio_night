@@ -82,7 +82,7 @@ content-padding = 0
 [module/app]
 type = custom/text
 content = " "
-content-foreground = ${color.foreground_blue}
+content-foreground = ${color.blue_arch}
 content-background = ${color.background}
 content-padding = 0
 content-font = 0
@@ -265,8 +265,8 @@ ws-icon-default = 
 ; Available tags:
 ;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
 ;   <label-mode> (default)
-format = <label-state><label-mode>
 
+format = <label-state><label-mode>
 format-font = 0
 
 label-mode = %mode%
@@ -439,7 +439,7 @@ label-empty = " Desktop"
 
 [module/uptime]
 type = custom/script
-exec = ~/.config/i3/polybar/Tokio_night/uptime.sh
+exec = ~/.config/i3/uptime.sh
 interval = 1
 
 format-prefix = " "
@@ -452,7 +452,7 @@ type = custom/text
 content = " "
 content-padding = 0
 content-font = 0
-content-foreground = ${color.foreground_blue}
+content-foreground = ${color.power_red}
 content-background = ${color.background}
 click-left = "$HOME/.config/i3/rofi/powermenu/type-1/powermenu.sh"
 
@@ -475,7 +475,7 @@ click-left = /usr/bin/blueman-manager &
 
 [module/uparch]
 type = custom/script
-exec = ~/.config/i3/polybar/Tokio_night/uparch.sh
+exec = ~/.config/i3/scripts/uparch.sh
 interval = 600
 format = <label>
 label-font = 0
@@ -600,18 +600,18 @@ content-font = 0
 content-background = ${color.alfa}
 content-foreground = ${color.foreground_blue}
 content-padding = 0
-click-left = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-playlist.sh" &
-click-middle = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
+click-left = "$HOME/.config/i3/scripts/mpv-youtube-playlist.sh" &
+click-middle = "$HOME/.config/i3/scripts/mpv-youtube-kill.sh" &
 
 [module/mpv]
 type = custom/script
 exec-if = pidof mpv 
-exec = "$HOME/.config/i3/scripts/polybar-mpv/mpv-zscroll.sh"
+exec = "$HOME/.config/i3/scripts/mpv-zscroll.sh"
 tail = true
 click-left = echo 'cycle pause' | socat - /tmp/mpv_socket
-click-middle = "$HOME/.config/i3/scripts/polybar-mpv/mpv-youtube-kill.sh" &
-scroll-up = "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh" --volume-up
-scroll-down = "$HOME/.config/i3/scripts/polybar-mpv/mpv.sh" --volume-down
+click-middle = "$HOME/.config/i3/scripts/mpv-youtube-kill.sh" &
+scroll-up = "$HOME/.config/i3/scripts/mpv.sh" --volume-up
+scroll-down = "$HOME/.config/i3/scripts/mpv.sh" --volume-down
 format-foreground = ${color.foreground_blue}
 format-background = ${color.background}
 format-underline = ${color.foreground_blue}
@@ -634,7 +634,7 @@ format-background = ${color.background}
 
 [module/cmus]
 type = custom/script
-exec = "$HOME/.config/i3/polybar/Tokio_night/polybar-cmus/cmus.sh"
+exec = "$HOME/.config/i3/scripts/cmus.sh"
 exec-if = pgrep -x cmus
 interval = 1
 tail = true
