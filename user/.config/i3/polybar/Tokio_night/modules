@@ -600,7 +600,7 @@ click-left = /usr/bin/kodi &
 type = custom/text
 content = " "
 content-font = 0
-content-background = ${color.alfa}
+content-background = ${color.background}
 content-foreground = ${color.foreground_blue}
 content-padding = 0
 click-left = "$HOME/.config/i3/scripts/mpv-youtube-playlist.sh" &
@@ -669,7 +669,7 @@ click-right= exec killall stalonetray
 click-left = "$HOME/.config/i3/scripts/stalonetray.sh"
 initial=2
 ;;format-font=2
-format-foreground= ${color.foreground_blue}
+format-foreground= ${color.blue_arch}
 format-background = ${color.background} 
 
 [module/placeholder]
