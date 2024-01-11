@@ -661,14 +661,16 @@ label-background = ${color.background}
 #############################
 ###  Tray
 
-[module/systray]	
-type = custom/text
-content = "TRAY"  
-content-background = ${color.BACKGROUND}
-content-foreground = ${color.RED}
-click-right = sub_bar
-click-left = sub_bar
-
+[module/systray]
+type=custom/ipc
+hook-0=echo "  "
+hook-1=echo "  "
+click-right= exec killall stalonetray
+click-left = "$HOME/.config/i3/scripts/stalonetray.sh"
+initial=2
+;;format-font=2
+format-foreground= ${color.foreground_blue}
+format-background = ${color.background} 
 
 [module/placeholder]
 type = custom/text

@@ -160,7 +160,7 @@ bindsym $mod+d exec --no-startup-id "$HOME/.config/i3/rofi/launchers/type-2/laun
 bindsym $mod+Return exec --no-startup-id "kitty"
 bindsym $mod1+t exec --no-startup-id "kitty --title floating"
 bindsym $mod1+Return exec --no-startup-id "kitty --title float -e ranger"
-bindsym $mod1+m exec --no-startup-id "kitty -e musikcube"
+bindsym $mod1+p exec --no-startup-id "kitty -e musikcube"
 #bindsym $mod1+h exec --no-startup-id "kitty --title float -e htop"
 bindsym $mod1+f exec --no-startup-id "firefox"
 bindsym $mod1+l exec --no-startup-id "$HOME/.config/i3/bin/multilock.sh"
