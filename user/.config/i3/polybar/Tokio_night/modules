@@ -73,7 +73,7 @@ type = custom/text
 ;content = 
 content = "·"
 
-content-font = 3
+content-font = 0
 content-background = ${color.alfa}
 content-foreground = ${color.dot}
 content-padding = 0
@@ -254,7 +254,7 @@ ws-icon-0 = 1;  Terminal
 ws-icon-1 = 2;  Firefox
 ws-icon-2 = 3;ﬥ  Code
 ws-icon-3 = 4;  File
-ws-icon-4 = 5;  Blen|Gimp 
+ws-icon-4 = 5;  Blend 
 ws-icon-5 = 6;  Telegram 
 ws-icon-6 = 7;  Video
 ws-icon-7 = 8;  Pictures
@@ -265,36 +265,39 @@ ws-icon-default = 
 ; Available tags:
 ;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
 ;   <label-mode> (default)
-
 format = <label-state><label-mode>
-format-font = 0
 
 label-mode = %mode%
-label-mode-padding = 1
 label-mode-background = ${color.background}
 label-mode-foreground = ${color.foreground}
+label-mode-padding = 1
+label-mode-font = 0
 
 label-focused = %icon%
-label-focused-foreground = ${color.foreground_violet}
+label-focused-foreground = ${color.foreground_orange}
 label-focused-background = ${color.background}
-label-focused-underline =  ${color.foreground_violet}
+label-focused-underline =  ${color.foreground_blue}
 label-focused-padding = 1
+label-focused-font = 0
 
 label-unfocused = %icon%
-label-unfocused-padding = 1
 label-unfocused-background = ${color.background}
 label-unfocused-foreground = ${color.foreground_blue}
+label-unfocused-padding = 1
+label-unfocused-font = 0
 
 label-visible = %icon%
 label-visible-underline = ${color.purple}
-label-visible-padding = 1
 label-visible-foreground = ${color.purple}
 label-visible-background = ${color.background}
+label-visible-padding = 1
+label-visible-font = 0
 
 label-urgent = %icon%
 label-urgent-foreground = ${color.red}
 label-urgent-background = ${color.background}
 label-urgent-padding = 1
+label-urgent-font = 0
 
 [module/keyboard]
 type = internal/xkeyboard
