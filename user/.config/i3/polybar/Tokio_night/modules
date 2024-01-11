@@ -601,7 +601,7 @@ type = custom/text
 content = " "
 content-font = 0
 content-background = ${color.background}
-content-foreground = ${color.foreground_blue}
+content-foreground = ${color.youtube_color}
 content-padding = 0
 click-left = "$HOME/.config/i3/scripts/mpv-youtube-playlist.sh" &
 click-middle = "$HOME/.config/i3/scripts/mpv-youtube-kill.sh" &
@@ -663,8 +663,8 @@ label-background = ${color.background}
 
 [module/systray]
 type=custom/ipc
-hook-0=echo "  "
-hook-1=echo "  "
+hook-0=echo "    Tray off"
+hook-1=echo "    Tray on"
 click-right= exec killall stalonetray
 click-left = "$HOME/.config/i3/scripts/stalonetray.sh"
 initial=2
