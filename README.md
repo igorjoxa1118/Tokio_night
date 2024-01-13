@@ -47,6 +47,21 @@
 <br>
 
 <details>
+  <summary>Screenshots</summary>
+
+![](./screenshots/Screen.png)
+![](./screenshots/Terminal.png)
+![](./screenshots/AppMenu.png)
+![](./screenshots/FastMenu.png)
+![](./screenshots/PowerMenu.png)
+![](./screenshots/Thunar.png)
+![](./screenshots/Blender.png)
+![](./screenshots/Telegram.png)
+![](./screenshots/Firefox.png)
+
+</details>
+
+<details>
   <summary>Ручная установка</summary>
 Нужные пакеты! Если у вас имеется что-то из списка, то устанавливайте те, которых у вас нету.
 
@@ -173,18 +188,3 @@ $${\color{lightgreen}Управление \space окнами \space в \space �
 | `Print`                | Скриншот экрана                          |
 
 > Подробнее смотреть в ~/.config/i3/keybinds
-
-<details>
-  <summary>Screenshots</summary>
-
-![](./screenshots/Screen.png)
-![](./screenshots/Terminal.png)
-![](./screenshots/AppMenu.png)
-![](./screenshots/FastMenu.png)
-![](./screenshots/PowerMenu.png)
-![](./screenshots/Thunar.png)
-![](./screenshots/Blender.png)
-![](./screenshots/Telegram.png)
-![](./screenshots/Firefox.png)
-
-</details>
