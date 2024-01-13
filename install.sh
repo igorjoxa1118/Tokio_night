@@ -183,8 +183,6 @@ for del in polybar rofi picom.conf; do
    rm -rf ~/.config/$del
    echo "$del deleted"
 done
-
-sleep 2
 clear
                                           ########## ---------- Установка dot-файлов и темы для Firefox ---------- ##########
 
