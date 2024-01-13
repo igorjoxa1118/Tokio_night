@@ -177,20 +177,13 @@ rsync -aAEHSXxr --exclude=".cache/mozilla/*" ~/.[^.]* $backup_folder
 
 printf "%s%sDone!!%s\n\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
-clear
 
-for folder in rofi polybar; do
-  if [ -d "$HOME/.config/$folder" ]; then
-    rm -rf "$folder"
-    rm -rf "$HOME/.config/picom.conf"
-    echo "$folder deleted"
-    echo "picom deleted"
-  else
-    echo "The folder $folder does not exist in $HOME/.config/"
-    echo "picom not exist"
-  fi
-done
+rm -rf "~/.config/picom.conf"
+rm -rf "~/.config/polybar"
+rm -rf "~/.config/rofi"
+
 sleep 2
+clean
                                           ########## ---------- Установка dot-файлов и темы для Firefox ---------- ##########
 
 logo "Install dotfiles"
