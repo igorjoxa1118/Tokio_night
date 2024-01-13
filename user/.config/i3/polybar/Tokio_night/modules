@@ -349,7 +349,7 @@ label-foreground = ${color.foreground_orange}
 
 [module/wired-network]
 type = internal/network
-interface = eth0
+interface = enp59s0
 
 [module/wireless-network]
 type = internal/network
@@ -392,7 +392,7 @@ animation-packetloss-framerate = 500
 
 [module/wired-network_stats]
 type = internal/network
-interface = eth0
+interface = enp59s0
 
 [module/wireless-network_stats]
 type = internal/network
@@ -663,8 +663,8 @@ label-background = ${color.background}
 
 [module/systray]
 type=custom/ipc
-hook-0=echo "    Tray off"
-hook-1=echo "    Tray on"
+hook-0=echo "    Tray"
+hook-1=echo "    Tray"
 click-right= exec killall stalonetray
 click-left = "$HOME/.config/i3/scripts/stalonetray.sh"
 initial=2
