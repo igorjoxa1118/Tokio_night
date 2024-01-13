@@ -178,12 +178,14 @@ rsync -aAEHSXxr --exclude=".cache/mozilla/*" ~/.[^.]* $backup_folder
 printf "%s%sDone!!%s\n\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 
-rm -rf "~/.config/picom.conf"
-rm -rf "~/.config/polybar"
-rm -rf "~/.config/rofi"
+
+for del in polybar rofi picom.conf; do
+   rm -rf ~/.config/$del
+   echo "$del deleted"
+done
 
 sleep 2
-clean
+clear
                                           ########## ---------- Установка dot-файлов и темы для Firefox ---------- ##########
 
 logo "Install dotfiles"
