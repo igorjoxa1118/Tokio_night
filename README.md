@@ -94,7 +94,7 @@ $${\color{red}!! ВАЖНО !!}$$
 
 ```python
 mkdir ~/backup
-rsync -aAEHSXxrv --exclude=".cache/mozilla/*" ~/.[^.]* ~/backup
+rsync -aAEHSXxrv --exclude=".cache/mozilla/*" ~/.[^.]* ~/.Backup_files
 ```
 
 $${\color{lightgreen}Необходимые \space условия \space путей, \space для \space корректной \space работы.}$$
