@@ -6,6 +6,7 @@
 - **WM:** [i3-gaps](https://github.com/Airblader/i3)
 - **Terminal:** [Kitty](https://sw.kovidgoyal.net/kitty/)
 - **Text Editor:** [Micro](https://micro-editor.github.io/)
+- **File Manager:** [Ranger](https://github.com/ranger/ranger)
 - **Fonts:** [Iosevka Term](https://github.com/be5invis/Iosevka)
 - **Bar:** [Polybar](https://github.com/polybar/polybar)
 - **Shell:** [Ohmyposh](https://ohmyposh.dev/docs/installation/linux)
