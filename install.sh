@@ -274,7 +274,7 @@ nvidia_detect()
         echo "Nvidia card is found. All is ok"
     else
         rm -rf "$HOME/.config/i3/polybar/Tokio_night/config.ini"
-        cd "$repo_dir"/not_nvidia || exit
+        cd "$repo_dir"/not_nvidia_polybar || exit
         cp -R config.ini "$HOME/.config/i3/polybar/Tokio_night/"
     fi
 }
