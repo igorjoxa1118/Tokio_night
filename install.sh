@@ -270,12 +270,15 @@ logo "Check nvidia driver"
 
 nvidia_detect()
 {
+  blacklight=$(ls -1 /sys/class/backlight/)
+
     if [ $(lspci -k | grep -A 2 -E "(VGA|3D)" | grep -i nvidia | wc -l) -gt 0 ]; then
         echo "Nvidia card is found. All is ok"
     else
         rm -rf "$HOME/.config/i3/polybar/Tokio_night/config.ini"
         cd "$repo_dir"/not_nvidia_polybar || exit
         cp -R config.ini "$HOME/.config/i3/polybar/Tokio_night/"
+        sed -i "s/nvidia_wmi_ec_backlight/${blacklight}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
     fi
 }
 nvidia_detect
