@@ -190,12 +190,6 @@ logo "Install dotfiles"
 
 func_install_dots() {
 
-### -- Переменные для сетевых интерфейсов -- ###
-
-en_int=$(ip -o link show | sed -rn '/^[0-9]+: en/{s/.: ([^:]*):.*/\1/p}')
-et_int=$(ip -o link show | sed -rn '/^[0-9]+: en/{s/.: ([^:]*):.*/\1/p}')
-wl_int=$(ip -o link show | sed -rn '/^[0-9]+: wl/{s/.: ([^:]*):.*/\1/p}')
-
 cd "$repo_dir"/user || exit
 
 cp -rf .* "$HOME"
@@ -204,6 +198,13 @@ sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.zshrc"
 
+
+### -- Переменные для сетевых интерфейсов -- ###
+
+en_int=$(ip -o link show | sed -rn '/^[0-9]+: en/{s/.: ([^:]*):.*/\1/p}')
+et_int=$(ip -o link show | sed -rn '/^[0-9]+: en/{s/.: ([^:]*):.*/\1/p}')
+wl_int=$(ip -o link show | sed -rn '/^[0-9]+: wl/{s/.: ([^:]*):.*/\1/p}')
+
 ### --- Проверка проводных сетевых интерфейсов. Добавляем интерфейсы в конфиги. --- ###
 
 if [ ! -z "$en_int" ]; then
@@ -211,6 +212,9 @@ sed -i "s/enp59s0/${en_int}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
 else
   if [ ! -z "$et_int" ]; then
   sed -i "s/enp59s0/${et_int}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
+  else
+  read -p "What is you Wired connection interface?(Example: eth0, enp59s0): " et_int_custom
+  sed -i "s/enp59s0/${et_int_custom}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
   fi
 fi
 
