@@ -406,7 +406,7 @@ format-disconnected-prefix-background = ${color.background}
 format-disconnected-prefix-foreground = ${color.power_red}
 format-disconnected-prefix-padding = 1
 label-disconnected = %{T10}%{T-}
-label-disconnected-background = ${color.power_red}
+label-disconnected-background = ${color.background}
 label-disconnected-foreground = ${color.foreground_blue}
 label-disconnected-padding = 1
 
