@@ -226,8 +226,8 @@ logo "Power supply install"
 ad=$(ls /sys/class/power_supply/ | awk "NR==1 { print $2 }" | grep A)
 bat=$(ls /sys/class/power_supply/ | awk "NR==2 { print $2 }" | grep B)
 
-sed -i "s/ADP0/${ad}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
-sed -i "s/BAT1/${bat}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
+sed -i "s/AC/${ad}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
+sed -i "s/BAT0/${bat}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
 echo -e "${PURPLE}Power supply install done!"
 sleep 2
 clear

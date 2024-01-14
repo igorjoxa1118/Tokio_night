@@ -161,8 +161,8 @@ poll-interval = 2
 ; Change it for yourself
 ; ls /sys/class/power_supply/
 
-battery = BAT1
-adapter = ADP0
+battery = BAT0
+adapter = AC
 full-at = 99
 time-format = %H:%M
 
