@@ -186,27 +186,40 @@ done
 clear
                                           ########## ---------- Установка dot-файлов и темы для Firefox ---------- ##########
 
-logo "Install dotfiles"
+
 
 func_install_dots() {
-
+logo "Install dotfiles"
 cd "$repo_dir"/user || exit
 
 cp -rf .* "$HOME"
-
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.zshrc"
+printf "%s%s%s ${GRE}Copy dots succesfully!%s\n"
+sleep 2
+clear
 
+########## ---------- Установка сведений о батареи ---------- ##########
+logo "Power supply install"
+
+ad=$(ls /sys/class/power_supply/ | awk "NR==1 { print $2 }" | grep A)
+bat=$(ls /sys/class/power_supply/ | awk "NR==2 { print $2 }" | grep B)
+
+sed -i "s/ADP0/${ad}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
+sed -i "s/BAT1/${bat}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
+printf "%s%s%s ${GRE}Power supply install done!%s\n"
+sleep 2
+clear
 
 ### -- Переменные для сетевых интерфейсов -- ###
+logo "Connection interfaces install"
 
 en_int=$(ip -o link show | sed -rn '/^[0-9]+: en/{s/.: ([^:]*):.*/\1/p}')
 et_int=$(ip -o link show | sed -rn '/^[0-9]+: en/{s/.: ([^:]*):.*/\1/p}')
 wl_int=$(ip -o link show | sed -rn '/^[0-9]+: wl/{s/.: ([^:]*):.*/\1/p}')
 
 ### --- Проверка проводных сетевых интерфейсов. Добавляем интерфейсы в конфиги. --- ###
-
 if [ ! -z "$en_int" ]; then
 sed -i "s/enp59s0/${en_int}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
 else
@@ -219,7 +232,6 @@ else
 fi
 
 ### --- Проверка безпроводных сетевых интерфейсов. Добавляем интерфейсы в конфиги. --- ###
-
 if [ ! -z "$wl_int" ]; then
 sed -i "s/wlp0s20f3/${wl_int}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
 else
@@ -227,17 +239,17 @@ read -p "What is you Wireless connection interface?(Example: wlan0, wlp0s20f3): 
 sed -i "s/wlp0s20f3/${wl_int_custom}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
 fi
 }
+printf "%s%s%s ${GRE}Connection interfaces install done!%s\n"
+sleep 2
+clear
 
 ### --- Завершение копирования dot-файлов --- ###
-
-if func_install_dots; then
-  printf "%s%s%s ${GRE}Copy dots succesfully!%s\n" 
-else
-  printf "%s%s%s ${RED}Copy dots fieled, you must do it manually%s\n"
-fi
+func_install_dots
+sleep 2
+clear
 
 ### --- Установка темы и конфигов Firefox --- ###
-
+logo "Firefox theme install"
 grep_ff=$(ls ~/.mozilla/firefox | grep default-release)
 
 copy_ff_func() {
@@ -245,7 +257,7 @@ if [ ! -z "$grep_ff" ]; then
 for ff_themes in $repo_dir/firefox/*; do
   cp -R "${ff_themes}" ~/.mozilla/firefox/"$grep_ff"
   if [ $? -eq 0 ]; then
-	printf "%s%s%s folder copied succesfully!%s\n" "${BLD}" "${CGR}" "${ff_themes}" "${CNC}"
+	printf "%s%s%s Firefox theme install done!%s\n" "${BLD}" "${CGR}" "${ff_themes}" "${CNC}"
 	sleep 1
   else
 	printf "%s%s%s failed to been copied, you must copy it manually%s\n" "${BLD}" "${CRE}" "${ff_themes}" "${CNC}"
@@ -266,19 +278,21 @@ sleep 2
 clear
                                         #### ------- Проверка видеокарты. Если карта отсутствует, то модули на polybar будут другие --- ###
 
-logo "Check nvidia driver"
+
 
 nvidia_detect()
 {
+  logo "Check nvidia driver"
   blacklight=$(ls -1 /sys/class/backlight/)
 
     if [ $(lspci -k | grep -A 2 -E "(VGA|3D)" | grep -i nvidia | wc -l) -gt 0 ]; then
-        echo "Nvidia card is found. All is ok"
+        printf "%s%s%s Nvidia driver found!%s\n" "${BLD}" "${CGR}" "${ff_themes}" "${CNC}"
     else
         rm -rf "$HOME/.config/i3/polybar/Tokio_night/config.ini"
         cd "$repo_dir"/not_nvidia_polybar || exit
         cp -R config.ini "$HOME/.config/i3/polybar/Tokio_night/"
         sed -i "s/nvidia_wmi_ec_backlight/${blacklight}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
+        printf "%s%s%s Nvidia driver no found!%s\n" "${BLD}" "${CGR}" "${ff_themes}" "${CNC}"
     fi
 }
 nvidia_detect
@@ -306,9 +320,10 @@ clear
 
 ########## --------- Замена шелла на zsh ---------- ##########
 
-logo "Changing default shell to zsh"
+
 
 shell_change() {
+  logo "Changing default shell to zsh"
 	if [[ $SHELL != "/usr/bin/zsh" ]]; then
 		printf "\n%s%sChanging your shell to zsh. Your root password is needed.%s\n\n" "${BLD}" "${CYE}" "${CNC}"
 		# Переключиться на zsh
