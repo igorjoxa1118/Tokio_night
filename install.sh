@@ -65,7 +65,7 @@ logo "Welcome!"
 printf '%s%s Please launch and close Firefox if you have it. Otherwise, the Firefox theme wont install the first time.\nThis script checks to see if you have the necessary requirements, and if not, it will install them.%s\n\n' "${BLD}" "${CRE}" "${CNC}"
 
 while true; do
-	read -rp "${PURPLE}Do you wish to continue? [y/N]: " yn
+	read -rp "Do you wish to continue? [y/N]: " yn
 		case $yn in
 			[Yy]* ) break;;
 			[Nn]* ) exit;;
@@ -138,7 +138,7 @@ clone_yay() {
 }
 
 while true; do
-	read -rp "${PURPLE}Do you want yay? [y/N]: " yn
+	read -rp "Do you want yay? [y/N]: " yn
 		case $yn in
 			[Yy]* ) clone_yay && break;;
 			[Nn]* ) break;;
