@@ -8,9 +8,22 @@ CBL=$(tput setaf 4)
 BLD=$(tput bold)
 CNC=$(tput sgr0)
 
+NOCOLOR='\033[0m'
 RED='\033[0;31m'
-GRE='\033[0;32m'
-CYA='\033[0;36m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+LIGHTGRAY='\033[0;37m'
+DARKGRAY='\033[1;30m'
+LIGHTRED='\033[1;31m'
+LIGHTGREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+LIGHTBLUE='\033[1;34m'
+LIGHTPURPLE='\033[1;35m'
+LIGHTCYAN='\033[1;36m'
+WHITE='\033[1;37m'
 
 backup_folder=~/.Backup_files
 date=$(date +%Y%m%d-%H%M%S)
@@ -42,7 +55,7 @@ ____   ____.__        _______  .__    .___     .___      __    _____.__.__
                                           ########## ---------- Скрипт НЕ должен быть запущен от sudo ---------- ##########
 
 if [ "$(id -u)" = 0 ]; then
-    echo "This script MUST NOT be run as root user."
+    echo -e "${LIGHTBLUE}This script MUST NOT be run as root user."
     exit 1
 fi
 
@@ -52,7 +65,7 @@ logo "Welcome!"
 printf '%s%s Please launch and close Firefox if you have it. Otherwise, the Firefox theme wont install the first time.\nThis script checks to see if you have the necessary requirements, and if not, it will install them.%s\n\n' "${BLD}" "${CRE}" "${CNC}"
 
 while true; do
-	read -rp " Do you wish to continue? [y/N]: " yn
+	read -rp "${PURPLE}Do you wish to continue? [y/N]: " yn
 		case $yn in
 			[Yy]* ) break;;
 			[Nn]* ) exit;;
@@ -102,7 +115,7 @@ clear
 # Проверка того, что архив user-dirs.dirs не существует в ~/.config
 	if [ ! -e "$HOME/.config/user-dirs.dirs" ]; then
 		xdg-user-dirs-update
-		echo "Creating xdg-user-dirs"
+		echo -e "${LIGHTBLUE}Creating xdg-user-dirs"
 	fi
 sleep 2 
 clear
@@ -125,7 +138,7 @@ clone_yay() {
 }
 
 while true; do
-	read -rp " Do you want yay? [y/N]: " yn
+	read -rp "${PURPLE}Do you want yay? [y/N]: " yn
 		case $yn in
 			[Yy]* ) clone_yay && break;;
 			[Nn]* ) break;;
@@ -159,29 +172,36 @@ clear
 
 logo "Downloading dotfiles"
 
-#### Клонировать если репозиторий dot-файлами не существует
+#### Клонировать если репозиторий dot-файлами не существует. А если существует, тогда обновить репозиторий и синхронизировать файлы в ~/home/user --- ###
 if [ ! -d "$repo_dir" ]; then
-   printf "Cloning dotfiles in %s\n" "$repo_url"
+   echo -e "${BLUE}Cloning dotfiles in "$HOME"" "$repo_url"
    git clone --depth=1 "$repo_url" "$repo_dir"
    else
-   echo "Dotfile folder exist"
+   echo -e "${LIGHTBLUE}Dotfile folder exist"
+   sleep 1
+   cd "$repo_dir"
+   git pull
+   echo -e "${CYAN}Update done"
+   rsync -aAEHSXxr "$repo_dir"/user/.[^.]* "$HOME"
+   sleep 1
+   exit;
 fi
 sleep 2
 clear
                                           ########## ---------- Резервная копия файлов и каталогов ---------- ##########
 
 logo "Backup files"
-printf "Backup files will be stored in %s%s%s/.Backup_files%s \n\n" "${BLD}" "${CRE}" "$HOME" "${CNC}"
+echo -e "${CYAN}Backup files will be stored in .Backup_files"
 
 rsync -aAEHSXxr --exclude=".cache/mozilla/*" ~/.[^.]* $backup_folder
 
-printf "%s%sDone!!%s\n\n" "${BLD}" "${CGR}" "${CNC}"
+echo -e "${ORANGE}Done!!"
 sleep 2
 
 
 for del in polybar rofi picom.conf; do
    rm -rf ~/.config/$del
-   echo "$del deleted"
+   echo -e "${YELLOW}$del deleted"
 done
 clear
                                           ########## ---------- Установка dot-файлов и темы для Firefox ---------- ##########
@@ -196,7 +216,7 @@ cp -rf .* "$HOME"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.zshrc"
-printf "%s%s%s ${GRE}Copy dots succesfully!%s\n"
+echo -e "${GRE}Copy dots succesfully!"
 sleep 2
 clear
 
@@ -208,7 +228,7 @@ bat=$(ls /sys/class/power_supply/ | awk "NR==2 { print $2 }" | grep B)
 
 sed -i "s/ADP0/${ad}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
 sed -i "s/BAT1/${bat}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
-printf "%s%s%s ${GRE}Power supply install done!%s\n"
+echo -e "${PURPLE}Power supply install done!"
 sleep 2
 clear
 
@@ -239,7 +259,7 @@ read -p "What is you Wireless connection interface?(Example: wlan0, wlp0s20f3): 
 sed -i "s/wlp0s20f3/${wl_int_custom}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
 fi
 }
-printf "%s%s%s ${GRE}Connection interfaces install done!%s\n"
+echo -e "${LIGHTCYAN}Connection interfaces install done!"
 sleep 2
 clear
 
@@ -257,10 +277,10 @@ if [ ! -z "$grep_ff" ]; then
 for ff_themes in $repo_dir/firefox/*; do
   cp -R "${ff_themes}" ~/.mozilla/firefox/"$grep_ff"
   if [ $? -eq 0 ]; then
-	printf "%s%s%s Firefox theme install done!%s\n" "${BLD}" "${CGR}" "${ff_themes}" "${CNC}"
+	echo -e "${LIGHTBLUE}Firefox theme install done!"
 	sleep 1
   else
-	printf "%s%s%s failed to been copied, you must copy it manually%s\n" "${BLD}" "${CRE}" "${ff_themes}" "${CNC}"
+	echo -e "${BLUE}Failed to been copied, you must copy it manually"
 	sleep 1
   fi
 done
@@ -270,7 +290,7 @@ fi
 if [ ! -z "$grep_ff" ]; then
    copy_ff_func
 else
-   printf "%s%s%s Please start FF befor run this script%s\n" "${BLD}" "${CRE}" "$grep_ff" "${CNC}"
+   echo -e "${ORANGE}Please start FF befor run this script"
    exit 1
 fi
 
@@ -286,13 +306,13 @@ nvidia_detect()
   blacklight=$(ls -1 /sys/class/backlight/)
 
     if [ $(lspci -k | grep -A 2 -E "(VGA|3D)" | grep -i nvidia | wc -l) -gt 0 ]; then
-        printf "%s%s%s Nvidia driver found!%s\n" "${BLD}" "${CGR}" "${ff_themes}" "${CNC}"
+        echo -e "${ORANGE}Nvidia card found!"
     else
         rm -rf "$HOME/.config/i3/polybar/Tokio_night/config.ini"
         cd "$repo_dir"/not_nvidia_polybar || exit
         cp -R config.ini "$HOME/.config/i3/polybar/Tokio_night/"
         sed -i "s/nvidia_wmi_ec_backlight/${blacklight}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
-        printf "%s%s%s Nvidia driver no found!%s\n" "${BLD}" "${CGR}" "${ff_themes}" "${CNC}"
+        echo -e "${CYAN}Nvidia card no found!"
     fi
 }
 nvidia_detect
@@ -306,15 +326,15 @@ logo "Enabling mpd service"
 ### --- Проверка, включена ли служба mpd на глобальном (системном) уровне. --- ###
 
 	if systemctl is-enabled --quiet mpd.service; then
-		printf "\n%s%sDisabling and stopping the global mpd service%s\n" "${BLD}" "${CBL}" "${CNC}"
+		echo -e "${LIGHTBLUE}Disabling and stopping the global mpd service"
 		sudo systemctl stop mpd.service
 		sudo systemctl disable mpd.service
 	fi
 
-printf "\n%s%sEnabling and starting the user-level mpd service%s\n" "${BLD}" "${CYE}" "${CNC}"
+echo -e "${ORANGE}Enabling and starting the user-level mpd service"
 sudo systemctl enable --now mpd.service
 
-printf "%s%sDone!!%s\n\n" "${BLD}" "${CGR}" "${CNC}"
+echo -e "${LIGHTGREEN}Done!!"
 sleep 2
 clear
 
@@ -325,12 +345,12 @@ clear
 shell_change() {
   logo "Changing default shell to zsh"
 	if [[ $SHELL != "/usr/bin/zsh" ]]; then
-		printf "\n%s%sChanging your shell to zsh. Your root password is needed.%s\n\n" "${BLD}" "${CYE}" "${CNC}"
+		echo -e "${ORANGE}Changing your shell to zsh. Your root password is needed."
 		# Переключиться на zsh
 		chsh -s /usr/bin/zsh
-		printf "%s%sShell changed to zsh. Please reboot.%s\n\n" "${BLD}" "${CGR}" "${CNC}"
+		echo -e "${LIGHTBLUE}Shell changed to zsh. Please reboot."
 	else
-		printf "%s%sYour shell is already zsh\nGood bye! installation finished, now reboot%s\n" "${BLD}" "${CGR}" "${CNC}"
+		echo -e "${CYAN}Your shell is already zsh! Installation finished, now reboot"
 	fi
 }
 
