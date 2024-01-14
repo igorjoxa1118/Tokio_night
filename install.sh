@@ -174,7 +174,7 @@ logo "Downloading dotfiles"
 
 #### Клонировать если репозиторий dot-файлами не существует. А если существует, тогда обновить репозиторий и синхронизировать файлы в ~/home/user --- ###
 if [ ! -d "$repo_dir" ]; then
-   echo -e "${BLUE}Cloning dotfiles in "$HOME"" "$repo_url"
+   echo -e "${CYAN}Cloning dotfiles in "$HOME"" "$repo_url"
    git clone --depth=1 "$repo_url" "$repo_dir"
    else
    echo -e "${LIGHTBLUE}Dotfile folder exist"
@@ -277,7 +277,7 @@ if [ ! -z "$grep_ff" ]; then
 for ff_themes in $repo_dir/firefox/*; do
   cp -R "${ff_themes}" ~/.mozilla/firefox/"$grep_ff"
   if [ $? -eq 0 ]; then
-	echo -e "${LIGHTBLUE}Firefox theme install done!"
+	echo -e "${LIGHTBLUE}$ff_themes install done!"
 	sleep 1
   else
 	echo -e "${BLUE}Failed to been copied, you must copy it manually"
