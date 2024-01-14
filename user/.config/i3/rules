@@ -12,7 +12,7 @@ for_window [class="(?i)nitrogen|engrampa|flameshot|file-roller|fsearch|qt5ct"] f
 for_window [class="(?i)atril|pavucontrol|lxappearance|viewnior|keepassxc|veracrypt"] floating enable
 for_window [class="(?i)mpv"] floating enable, resize set 350 250, sticky enable, move window to position 1000 85
 # for_window [title="(?i)htop"] floating enable, resize set 1280 600, move position center, focus
-for_window [class="(?i)firefox|xfce4-terminal|thunar|code|mousepad|mupdf|blender|gimp|krita|telegram-desktop|kodi"] focus
+for_window [class="(?i)firefox|kitty|thunar|code|mousepad|mupdf|blender|gimp|krita|telegram-desktop|kodi"] focus
 for_window [window_role="demo"] move window to scratchpad, scratchpad show, floating enable, border pixel 0, resize set 1366 250, move absolute position 0 518
 for_window [class="(?i)demo"] move window to scratchpad, scratchpad show, floating enable, border pixel 0, resize set 1366 350, move absolute position 0 418
 
