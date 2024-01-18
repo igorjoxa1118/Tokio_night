@@ -190,8 +190,8 @@ clear
 
 func_install_dots() {
 logo "Install dotfiles"
-cd "$pwd"/Tokio_night/user || exit
-rsync -aAEHSXxr "$pwd"/Tokio_night/user/.[^.]* "$HOME"
+cd "$pwd"/user || exit
+rsync -aAEHSXxr "$pwd"/user/.[^.]* "$HOME"
 cp -rf .* "$HOME"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
@@ -289,7 +289,7 @@ nvidia_detect()
         echo -e "${ORANGE}Nvidia card found!"
     else
         rm -rf "$HOME/.config/i3/polybar/Tokio_night/config.ini"
-        cd "$pwd"/Tokio_night/not_nvidia_polybar || exit
+        cd "$pwd"/not_nvidia_polybar || exit
         cp -R config.ini "$HOME/.config/i3/polybar/Tokio_night/"
         sed -i "s/nvidia_wmi_ec_backlight/${blacklight}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
         echo -e "${CYAN}Nvidia card no found!"
