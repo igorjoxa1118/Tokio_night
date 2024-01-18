@@ -173,16 +173,8 @@ clear
 logo "Downloading dotfiles"
 
 #### Клонировать если репозиторий dot-файлами не существует. А если существует, тогда обновить репозиторий и синхронизировать файлы в ~/home/user --- ###
-if [ ! -d "$repo_dir" ]; then
-   echo -e "${CYAN}Cloning dotfiles in "$HOME"" "$repo_url"
-   git clone --depth=1 "$repo_url" "$repo_dir"
-   else
-   echo -e "${LIGHTBLUE}Dotfile folder exist"
-   sleep 1
-   cd "$repo_dir"
+   echo -e "${CYAN}IN dotfiles dir"
    rsync -aAEHSXxr "$repo_dir"/user/.[^.]* "$HOME"
-fi
-sleep 2
 clear
                                           ########## ---------- Резервная копия файлов и каталогов ---------- ##########
 
