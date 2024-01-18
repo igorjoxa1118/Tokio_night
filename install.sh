@@ -191,7 +191,6 @@ clear
 func_install_dots() {
 logo "Install dotfiles"
 cd "$pwd"/user || exit
-rsync -aAEHSXxr "$pwd"/user/.[^.]* "$HOME"
 cp -rf .* "$HOME"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
