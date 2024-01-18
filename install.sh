@@ -254,7 +254,7 @@ grep_ff=$(ls ~/.mozilla/firefox | grep default-release)
 
 copy_ff_func() {
 if [ ! -z "$grep_ff" ]; then
-for ff_themes in $repo_dir/firefox/*; do
+for ff_themes in "$pwd"/firefox/*; do
   cp -R "${ff_themes}" ~/.mozilla/firefox/"$grep_ff"
   if [ $? -eq 0 ]; then
 	echo -e "${LIGHTBLUE}$ff_themes install done!"
