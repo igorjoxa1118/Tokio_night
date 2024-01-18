@@ -181,8 +181,6 @@ if [ ! -d "$repo_dir" ]; then
    sleep 1
    cd "$repo_dir"
    rsync -aAEHSXxr "$repo_dir"/user/.[^.]* "$HOME"
-   sleep 1
-   exit;
 fi
 sleep 2
 clear
