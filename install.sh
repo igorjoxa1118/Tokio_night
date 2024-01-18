@@ -168,14 +168,6 @@ done
 sleep 2
 clear
 
-                                          ########## ---------- Клонирование Tokio night dots! ---------- ##########
-
-logo "Downloading dotfiles"
-
-#### Клонировать если репозиторий dot-файлами не существует. А если существует, тогда обновить репозиторий и синхронизировать файлы в ~/home/user --- ###
-   echo -e "${CYAN}IN dotfiles dir"
-   rsync -aAEHSXxr "$repo_dir"/user/.[^.]* "$HOME"
-clear
                                           ########## ---------- Резервная копия файлов и каталогов ---------- ##########
 
 logo "Backup files"
@@ -199,7 +191,7 @@ clear
 func_install_dots() {
 logo "Install dotfiles"
 cd "$repo_dir"/user || exit
-
+rsync -aAEHSXxr "$repo_dir"/user/.[^.]* "$HOME"
 cp -rf .* "$HOME"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
