@@ -29,7 +29,7 @@ backup_folder=~/.Backup_files
 date=$(date +%Y%m%d-%H%M%S)
 yay_git="https://aur.archlinux.org/yay.git"
 repo_url="https://github.com/igorjoxa1118/Tokio_night"
-repo_dir="$HOME/Tokio_night"
+
 
 user=$(whoami)
 
@@ -186,12 +186,12 @@ done
 clear
                                           ########## ---------- Установка dot-файлов и темы для Firefox ---------- ##########
 
-
+pwd=$(pwd)
 
 func_install_dots() {
 logo "Install dotfiles"
-cd "$repo_dir"/user || exit
-rsync -aAEHSXxr "$repo_dir"/user/.[^.]* "$HOME"
+cd "$pwd"/Tokio_night/user || exit
+rsync -aAEHSXxr "$pwd"/Tokio_night/user/.[^.]* "$HOME"
 cp -rf .* "$HOME"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
@@ -289,7 +289,7 @@ nvidia_detect()
         echo -e "${ORANGE}Nvidia card found!"
     else
         rm -rf "$HOME/.config/i3/polybar/Tokio_night/config.ini"
-        cd "$repo_dir"/not_nvidia_polybar || exit
+        cd "$pwd"/Tokio_night/not_nvidia_polybar || exit
         cp -R config.ini "$HOME/.config/i3/polybar/Tokio_night/"
         sed -i "s/nvidia_wmi_ec_backlight/${blacklight}/g" "$HOME"/.config/i3/polybar/Tokio_night/modules
         echo -e "${CYAN}Nvidia card no found!"
