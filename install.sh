@@ -24,7 +24,7 @@ LIGHTBLUE='\033[1;34m'
 LIGHTPURPLE='\033[1;35m'
 LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
-
+pwd=$(pwd)
 backup_folder=~/.Backup_files
 date=$(date +%Y%m%d-%H%M%S)
 yay_git="https://aur.archlinux.org/yay.git"
@@ -186,7 +186,7 @@ done
 clear
                                           ########## ---------- Установка dot-файлов и темы для Firefox ---------- ##########
 
-pwd=$(pwd)
+
 
 func_install_dots() {
 logo "Install dotfiles"
