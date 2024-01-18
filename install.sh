@@ -180,11 +180,12 @@ if [ ! -d "$repo_dir" ]; then
    echo -e "${LIGHTBLUE}Dotfile folder exist"
    sleep 1
    cd "$repo_dir"
-   git pull
+   if $(git pull); then
    echo -e "${CYAN}Update done"
    rsync -aAEHSXxr "$repo_dir"/user/.[^.]* "$HOME"
-   sleep 1
+   else
    exit;
+   fi
 fi
 sleep 2
 clear
