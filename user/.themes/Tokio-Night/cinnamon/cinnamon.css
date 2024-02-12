@@ -2054,9 +2054,9 @@ StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: rgba(65, 72, 104, 0.75);
+  -active-window-background: #rgba(187, 154, 247, 0.75);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(65, 72, 104, 0.75);
+  -inactive-window-background: #rgba(187, 154, 247, 0.75);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 

@@ -922,7 +922,7 @@ StWidget.focused .app-well-app-running-dot {
   border-radius: 12px;
   padding: 6px 12px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(65, 72, 104, 0.55);
+  border: 1px solid #rgba(187, 154, 247, 0.55);
   text-align: center;
   -y-offset: 12px;
   -x-offset: 8px;
@@ -1373,7 +1373,7 @@ StEntry StLabel.hint-text,
 .keyboard-key:focus,
 .keyboard-key:hover {
   color: #bb9af7;
-  background-color: #414868;
+  background-color: rgba(187, 154, 247, 0.2);
 }
 
 .keyboard-key:checked,
@@ -1395,7 +1395,7 @@ StEntry StLabel.hint-text,
 .keyboard-key.default-key:focus,
 .keyboard-key.default-key:hover {
   color: #bb9af7;
-  background-color: #414868;
+  background-color: rgba(187, 154, 247, 0.2);
 }
 
 .keyboard-key.default-key:checked,

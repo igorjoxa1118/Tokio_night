@@ -1086,7 +1086,7 @@ button.osd {
 }
 
 button.osd:hover {
-  background-color: #414868;
+  background-color: rgba(187, 154, 247, 0.2);
   color: #bb9af7;
 }
 
@@ -2633,8 +2633,8 @@ headerbar .pathbar {
  **************/
 columnview.view,
 treeview.view {
-  border-left-color: #414868;
-  border-top-color: #414868;
+  border-left-color: rgba(187, 154, 247, 0.2);
+  border-top-color: rgba(187, 154, 247, 0.2);
 }
 
 columnview.view:selected,
@@ -5277,7 +5277,7 @@ paned > separator {
   border: none;
   box-shadow: none;
   background-color: transparent;
-  background-image: image(#414868);
+  background-image: image(rgba(187, 154, 247, 0.2));
   background-size: 1px 1px;
   background-clip: content-box;
 }
@@ -5286,7 +5286,7 @@ paned > separator.wide {
   min-width: 6px;
   min-height: 6px;
   background-color: #16161e;
-  background-image: image(#414868), image(#414868);
+  background-image: image(rgba(187, 154, 247, 0.2)), image(rgba(187, 154, 247, 0.2));
   background-size: 1px 1px, 1px 1px;
 }
 
@@ -5654,7 +5654,7 @@ window.solid-csd {
   padding: 2px;
   border-radius: 0;
   background-color: #16161e;
-  border: 1px solid #414868;
+  border: 1px solid rgba(187, 154, 247, 0.2);
 }
 
 window.solid-csd:backdrop {

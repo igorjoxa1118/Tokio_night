@@ -204,7 +204,7 @@ treeview.view:selected:not(.progressbar):not(.trough),
 modelbutton.flat:selected,
 .menuitem.button.flat:selected {
   color: #bb9af7;
-  background-color: #414868;
+  background-color: rgba(187, 154, 247, 0.2);
 }
 
 .nemo-window .view selection,
@@ -3549,7 +3549,7 @@ menu,
   background-color: #1a1b26;
   background-clip: border-box;
   border-radius: 12px;
-  border: 1px solid #414868;
+  border: 1px solid rgba(187, 154, 247, 0.2);
 }
 
 .csd menu,
@@ -6072,7 +6072,7 @@ messagedialog.background.csd decoration {
   border-radius: 0;
   box-shadow: none;
   background-color: #16161e;
-  border: 1px solid #414868;
+  border: 1px solid rgba(187, 154, 247, 0.2);
 }
 
 .solid-csd decoration:backdrop {
@@ -6524,7 +6524,7 @@ popover.emoji-completion .emoji:hover {
 .nautilus-window.background.csd notebook > stack {
   background-color: #1d202f;
   border-radius: 12px;
-  border: 1px solid rgba(65, 72, 104, 0.2);
+  border: 1px solid #rgba(187, 154, 247, 0.2);
   margin: 0 6px 6px;
 }
 
@@ -9576,7 +9576,7 @@ window.background.chromium decoration {
 
 window.background.chromium entry,
 window.background.chromium > button {
-  border: 1px solid #414868;
+  border: 1px solid rgba(187, 154, 247, 0.2);
 }
 
 window.background.chromium > button {
@@ -9610,7 +9610,7 @@ window.background.chromium treeview.view.cell:selected:focus {
 }
 
 window.background.chromium treeview.view button {
-  border: 1px solid #414868;
+  border: 1px solid rgba(187, 154, 247, 0.2);
   background-color: #16161e;
 }
 
@@ -9639,7 +9639,7 @@ tooltip.background.chromium {
 }
 
 #MozillaGtkWidget > widget > separator {
-  color: #414868;
+  color: rgba(187, 154, 247, 0.2);
 }
 
 #MozillaGtkWidget > widget > scrollbar {
@@ -9652,7 +9652,7 @@ tooltip.background.chromium {
 
 #MozillaGtkWidget > widget > entry,
 #MozillaGtkWidget > widget > button > button {
-  border: 1px solid #414868;
+  border: 1px solid rgba(187, 154, 247, 0.2);
   border-radius: 6px;
   box-shadow: none;
 }
@@ -9753,11 +9753,11 @@ tooltip.background.chromium {
 }
 
 #MozillaGtkWidget > widget > frame {
-  color: #414868;
+  color: rgba(187, 154, 247, 0.2);
 }
 
 #MozillaGtkWidget menu > separator {
-  color: #414868;
+  color: rgba(187, 154, 247, 0.2);
 }
 
 window.background:not(.csd) > window > menu menuitem {
@@ -9913,7 +9913,7 @@ window.background.csd
   box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
     0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
   margin-top: -1px;
-  border: 1px solid #414868;
+  border: 1px solid rgba(187, 154, 247, 0.2);
 }
 
 #gnc-id-main-window treeview.view {
