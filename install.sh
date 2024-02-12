@@ -77,7 +77,7 @@ clear
                                           ######### -------------- Зависимости ------------------########
 
 dependencias=(base-devel yad cmus rsync mpv jq git socat mpd polkit-gnome stalonetray kitty lsd ranger \
-              micro blueman mousepad ristretto firefox thunar thunar-volman thunar-media-tags-plugin thunar-archive-plugin \
+              micro blueman mousepad cava ristretto firefox thunar thunar-volman thunar-media-tags-plugin thunar-archive-plugin \
               polybar rofi dunst xdg-user-dirs nitrogen picom yt-dlp \
               fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-autosuggestions \
               zsh-history-substring-search starship bluez-utils bluez-tools bluez-plugins bluez-libs bluez blueman)

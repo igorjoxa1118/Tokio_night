@@ -566,6 +566,16 @@ format-background = ${color.background}
 click-left = "urxvt -name Pacui -e ~/.bin/pacui &"
 
 
+[module/cava]
+type = custom/script
+tail = true
+exec = $HOME/.config/i3/bin//cava.sh
+format = <label>
+format-font = 5
+label = %output%
+label-background = ${color.background}
+label-foreground = ${color.foreground_blue}
+
 ############################
 ############################
 [module/terminal]
@@ -739,8 +749,8 @@ label-background = ${color.background}
 
 [module/systray]
 type=custom/ipc
-hook-0=echo "    Tray"
-hook-1=echo "    Tray"
+hook-0=echo "   "
+hook-1=echo "   "
 click-right= exec killall stalonetray
 click-left = "$HOME/.config/i3/scripts/stalonetray.sh"
 initial=2
