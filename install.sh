@@ -78,11 +78,11 @@ clear
 
 dependencias=(base-devel yad cmus rsync mpv jq git socat mpd polkit-gnome stalonetray kitty lsd ranger \
               micro blueman mousepad cava ristretto firefox thunar thunar-volman thunar-media-tags-plugin thunar-archive-plugin \
-              polybar rofi dunst xdg-user-dirs nitrogen picom yt-dlp \
+              caja polybar rofi dunst xdg-user-dirs nitrogen picom yt-dlp \
               fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-autosuggestions \
               zsh-history-substring-search starship bluez-utils bluez-tools bluez-plugins bluez-libs bluez blueman)
 
-dependencias_yay=(zscroll-git ytdlp-gui oh-my-zsh-git oh-my-posh-bin autotiling musikcube pamac-aur kazam)
+dependencias_yay=(zscroll-git ytdlp-gui oh-my-zsh-git oh-my-posh-bin autotiling gtkhash-thunar zenity-gtk3 musikcube pamac-aur kazam)
 
 if [ ! -f /usr/bin/firefox ];then 
  sudo pacman -S firefox
