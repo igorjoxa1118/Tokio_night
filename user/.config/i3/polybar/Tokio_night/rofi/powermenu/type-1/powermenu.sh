@@ -10,7 +10,7 @@
 ## style-1   style-2   style-3   style-4   style-5
 
 # Current Theme
-dir="$HOME/.config/i3/rofi/powermenu/type-1"
+dir="$HOME/.config/i3/polybar/Tokio_night/rofi/powermenu/type-1"
 theme='style-5'
 
 # CMDs

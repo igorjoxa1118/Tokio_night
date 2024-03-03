@@ -86,7 +86,7 @@ content-foreground = ${color.foreground_blue_arch}
 content-background = ${color.background_alfa}
 content-padding = 0
 content-font = 0
-click-left = "$HOME/.config/i3/rofi/launchers/type-3/launcher.sh"
+click-left = "$HOME/.config/i3/polybar/Tokio_night/rofi/launchers/type-3/launcher.sh"
 
 #[module/alsa]
 #type = internal/alsa
@@ -417,7 +417,7 @@ type = internal/network
 
 interface = wlp0s20f3
 
-format-connected = %{A1:~/.config/i3/rofi/bin/network:}<label-connected>%{A}
+format-connected = %{A1:~/.config/i3/polybar/Tokio_night/rofi/bin/network:}<label-connected>%{A}
 format-connected-background = ${color.background_alfa}
 format-packetloss = <animation-packetloss>
 label-connected = %local_ip%
@@ -535,7 +535,7 @@ content-padding = 0
 content-font = 0
 content-foreground = ${color.foreground_power_red}
 content-background = ${color.background_alfa}
-click-left = "$HOME/.config/i3/rofi/powermenu/type-1/powermenu.sh"
+click-left = "$HOME/.config/i3/polybar/Tokio_night/rofi/powermenu/type-1/powermenu.sh"
 
 [module/pamac]
 type = custom/text
