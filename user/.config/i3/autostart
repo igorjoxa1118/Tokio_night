@@ -17,9 +17,8 @@ exec --no-startup-id "gnome-keyring-daemon --start --components=pkcs11"
 
 # Tokio_night theme
 exec_always --no-startup-id "$HOME/.config/i3/polybar/Tokio_night/launch.sh"
-
-# Colibre theme #
-#exec_always --no-startup-id "$HOME/.config/i3/polybar/Colibre/launch.sh"
+# Sweet theme #
+#exec_always --no-startup-id "$HOME/.config/i3/polybar/Sweet/launch.sh"
 ####################
 
 exec_always --no-startup-id "dunst -config $HOME/.config/dunst/dunstrc"

@@ -88,6 +88,15 @@ content-padding = 0
 content-font = 0
 click-left = "$HOME/.config/i3/polybar/Tokio_night/rofi/launchers/type-3/launcher.sh"
 
+[module/xdomenu]
+type = custom/text
+interval = 1
+content = " "
+content-font = 3
+content-foreground = ${color.foreground_blue_arch}
+content-padding = 0
+click-left = jgmenu_run
+
 #[module/alsa]
 #type = internal/alsa
 #interval = 5

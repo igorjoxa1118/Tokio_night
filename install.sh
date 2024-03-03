@@ -76,7 +76,7 @@ clear
 
                                           ######### -------------- Зависимости ------------------########
 
-dependencias=(base-devel yad cmus rsync mpv jq git socat mpd polkit-gnome stalonetray kitty lsd ranger \
+dependencias=(base-devel yad cmus jgmenu rsync mpv jq git socat mpd polkit-gnome stalonetray kitty lsd ranger \
               micro blueman mousepad ristretto firefox thunar thunar-volman thunar-media-tags-plugin thunar-archive-plugin \
               caja polybar rofi dunst xdg-user-dirs engrampa nitrogen picom yt-dlp \
               fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-autosuggestions \
