@@ -195,6 +195,14 @@ sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/bg-saved.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.config/nitrogen/nitrogen.cfg"
 sed -i "s/vir0id/${user}/g" "$HOME/.zshrc"
 echo -e "${GRE}Copy dots succesfully!"
+
+if [[ ! -d "/usr/share/garuda" ]]; then
+sudo mkdir -p /usr/share/garuda/jgmenu/
+sudo cp -r $HOME/.config/jgmenu/MenuIcons /usr/share/garuda/jgmenu/
+else
+sudo cp -r $HOME/.config/jgmenu/MenuIcons /usr/share/garuda/jgmenu/
+fi
+
 sleep 2
 clear
 
