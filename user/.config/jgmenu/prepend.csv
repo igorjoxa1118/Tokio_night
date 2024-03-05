@@ -1,7 +1,7 @@
 @icon,,18,17,16,16,0,left,top,#7AA2F7,#7AA2F7,/usr/share/garuda/jgmenu/MenuIcons/search.png
 @search,,42,15,150,20,2,left,top,#c0caf5,#7aa2f7,search ...
 
-Terminal,kitty -float,/usr/share/garuda/jgmenu/MenuIcons/terminal.png
+Terminal,kitty,/usr/share/garuda/jgmenu/MenuIcons/terminal.png
 
 Web Browser,firefox,/usr/share/garuda/jgmenu/MenuIcons/web-browser.png
 
