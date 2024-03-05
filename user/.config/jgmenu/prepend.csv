@@ -14,8 +14,6 @@ Music Player,music --albumArtCover,/usr/share/garuda/jgmenu/MenuIcons/music.png
 ^sep()
 Applications,^checkout(lx-apps),/usr/share/garuda/jgmenu/MenuIcons/applications.png
 
-Exit,powermenu,/usr/share/garuda/jgmenu/MenuIcons/exit.png
-
 I3,^checkout(i3),/usr/share/garuda/jgmenu/MenuIcons/bspwm.png
 ^tag(i3)
 Edit Config, kitty -e micro ~/.config/i3/config, /usr/share/garuda/jgmenu/MenuIcons/edit-note.png
