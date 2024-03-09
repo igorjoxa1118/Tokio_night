@@ -181,6 +181,7 @@ bindsym $mod1+c  exec --no-startup-id "caja"
 #bindsym $mod+Ctrl+Left exec mpc prev
 #bindsym $mod+Ctrl+Right exec mpc next
 #bindsym $mod+Ctrl+d exec mpc del 0
+bindsym $mod1+Ctrl+e exec toggle-conkeww
 #---------------------------------------------
 
 

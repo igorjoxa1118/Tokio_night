@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMG="$HOME/.wallpapers/i3/Tokyo-Night/lowpoly_street.png"
+IMG="$HOME/.wallpapers/Hypri3/Tokyo-Night/lowpoly_street.png"
 
 if [[ $(command -v  multilockscreen) ]]; then
   if [[ ! -d $HOME/.cache/multilock ]]; then

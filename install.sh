@@ -78,7 +78,7 @@ clear
 
 dependencias=(base-devel yad cmus jgmenu rsync mpv jq git socat mpd polkit-gnome stalonetray kitty lsd ranger \
               micro blueman mousepad ristretto firefox thunar thunar-volman thunar-media-tags-plugin thunar-archive-plugin \
-              caja polybar rofi dunst xdg-user-dirs engrampa nitrogen picom yt-dlp \
+              caja polybar rofi dunst xdg-user-dirs engrampa i3lock-color bc nitrogen picom yt-dlp \
               fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-autosuggestions \
               zsh-history-substring-search starship bluez-utils bluez-tools bluez-plugins bluez-libs bluez blueman)
 
@@ -198,6 +198,7 @@ echo -e "${GRE}Copy dots succesfully!"
 
 if [[ ! -d "/usr/share/garuda" ]]; then
 sudo mkdir -p /usr/share/garuda/jgmenu/
+sudo cp $HOME/.config/i3/bin/toggle-conkeww /usr/local/bin
 sudo cp -r $HOME/.config/jgmenu/MenuIcons /usr/share/garuda/jgmenu/
 else
 sudo cp -r $HOME/.config/jgmenu/MenuIcons /usr/share/garuda/jgmenu/
