@@ -129,9 +129,9 @@ type = internal/pulseaudio
 ;format-volume = <label-volume> <bar-volume>
 format-volume = <ramp-volume> <label-volume>
 format-volume-background = ${color.background_alfa}
-format-volume-foreground = ${color.foreground_blue}
+format-volume-foreground = ${color.foreground_orange}
 label-volume = %percentage%%
-label-volume-foreground = ${color.foreground_orange}
+label-volume-foreground = ${color.foreground_blue}
 
 label-muted = 🔇 muted
 label-muted-foreground = #666
@@ -140,7 +140,7 @@ ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-headphones-0 = 
-ramp-volume-foreground = ${color.foreground_blue}
+ramp-volume-foreground = ${color.foreground_orange}
 
 
 [module/backlight]
@@ -198,7 +198,7 @@ time-format = %H:%M
 format-charging = <animation-charging> <label-charging>
 format-charging-prefix = "  "
 format-charging-prefix-font = 1
-format-charging-prefix-foreground = ${color.cyan}
+format-charging-prefix-foreground = ${color.foreground_orange}
 format-charging-background = ${color.background_alfa}
 
 ; Available tags:
@@ -235,10 +235,10 @@ label-discharging = %percentage%%
 format-full = <label-full>
 format-full-prefix = "  "
 format-full-prefix-font = 2
-format-full-prefix-foreground = ${color.foreground_blue}
+format-full-prefix-foreground = ${color.foreground_orange}
 format-full-background = ${color.background_alfa}
 label-full = %percentage%%
-label-full-foreground = ${color.foreground_orange}
+label-full-foreground = ${color.foreground_blue}
 
 ; Only applies if <ramp-capacity> is used
 ramp-capacity-0 = 
@@ -246,7 +246,7 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = ${color.foreground_orange}
+ramp-capacity-foreground = ${color.foreground_blue}
 ramp-capacity-font = 2
 
 ; Only applies if <animation-charging> is used
@@ -267,11 +267,11 @@ interval = 1
 
 format = <label>
 format-prefix = 
-format-prefix-foreground = ${color.foreground_blue}
+format-prefix-foreground = ${color.foreground_orange}
 format-background = ${color.background_alfa}
 
 label = " %percentage%%"
-label-foreground = ${color.foreground_orange}
+label-foreground = ${color.foreground_blue}
 
 [module/date]
 type = internal/date
@@ -404,18 +404,18 @@ type = custom/script
 exec = ~/.config/i3/scripts/memory.sh
 click-left = ~/.config/i3/scripts/memory.sh --popup
 format-prefix = " "
-format-prefix-foreground = ${color.foreground_blue}
+format-prefix-foreground = ${color.foreground_orange}
 format-background = ${color.background_alfa}
-label-foreground = ${color.foreground_orange}
+label-foreground = ${color.foreground_blue}
 
 [module/system-nvidia-smi]
 type = custom/script
 exec = ~/.config/i3/scripts/system-nvidia-smi.sh
 interval = 10
 format-prefix = " "
-format-prefix-foreground = ${color.foreground_blue}
+format-prefix-foreground = ${color.foreground_orange}
 format-background = ${color.background_alfa}
-label-foreground = ${color.foreground_orange}
+label-foreground = ${color.foreground_blue}
 
 [module/wireless-network]
 type = internal/network
@@ -493,7 +493,7 @@ interval = 1.0
 
 accumulate-stats = true
 unknown-as-up = trueblack
-label-connected = "%{A1:networkmanager_dmenu &:} %{F#6C77BB}%{F-} %{F#2ac3de}%downspeed%%{A} %{F#6C77BB}%{F-} %{F#2ac3de}%upspeed%%{A}"
+label-connected = "%{A1:networkmanager_dmenu &:} %{F#f7768e}%{F-} %{F#2ac3de}%downspeed%%{A} %{F#f7768e}%{F-} %{F#2ac3de}%upspeed%%{A}"
 label-connected-background = ${color.background_alfa}
 label-connected-foreground = ${color.red}
 
@@ -509,8 +509,8 @@ interval = 10
 label = %output%°C
 format-prefix = " "
 format-prefix-background = ${color.background_alfa}
-format-prefix-foreground = ${color.foreground_blue}
-label-foreground = ${color.foreground_orange}
+format-prefix-foreground = ${color.foreground_orange}
+label-foreground = ${color.foreground_blue}
 label-background = ${color.background_alfa}
 
 [module/title]
@@ -518,7 +518,7 @@ type = internal/xwindow
 
 format = <label>
 format-prefix = 
-format-prefix-foreground = ${color.foreground_blue}
+format-prefix-foreground = ${color.foreground_orange}
 format-foreground = ${color.foreground}
 format-background = ${color.background_alfa}
 
@@ -571,8 +571,8 @@ format = <label>
 label-font = 0
 format-prefix = "ﮨ  "
 format-prefix-background = ${color.background_alfa}
-format-prefix-foreground = ${color.foreground_blue}
-format-foreground = ${color.foreground_orange}
+format-prefix-foreground = ${color.foreground_orange}
+format-foreground = ${color.foreground_blue}
 format-background = ${color.background_alfa}
 click-left = "urxvt -name Pacui -e ~/.bin/pacui &"
 
@@ -585,119 +585,7 @@ format = <label>
 format-font = 5
 label = %output%
 label-background = ${color.background_alfa}
-label-foreground = ${color.foreground_blue}
-
-############################
-############################
-[module/terminal]
-type = custom/text
-content = "  Terminal"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_orange}
-content-padding = 0
-click-left = /usr/bin/kitty &
-click-right =
-
-[module/web]
-type = custom/text
-content = "  Firefox"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_orange}
-content-padding = 0
-click-left = /usr/bin/firefox &
-
-[module/thunar]
-type = custom/text
-content = "  Thunar"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_orange}
-content-padding = 0
-click-left = /usr/bin/thunar &
-
-[module/caja]
-type = custom/text
-content = "  Caja"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_orange}
-content-padding = 0
-click-left = /usr/bin/caja &
-
-[module/discord]
-type = custom/text
-content = "  Discord"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_orange}
-content-padding = 0
-click-left = /usr/bin/discord &
-
-[module/kdenlive]
-type = custom/text
-content = "洞  Kdenlive"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_orange}
-content-padding = 0
-click-left = /usr/bin/kdenlive &
-
-[module/gimp]
-type = custom/text
-content = "  Gimp"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_violet}
-content-padding = 0
-click-left = /usr/bin/gimp &
-
-[module/krita]
-type = custom/text
-content = "  Krita"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_violet}
-content-padding = 0
-click-left = /usr/bin/krita &
-
-[module/blender]
-type = custom/text
-content = "  Blender"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_violet}
-content-padding = 0
-click-left = /usr/bin/blender &
-
-[module/code]
-type = custom/text
-content = "ﬥ  Code"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_violet}
-content-padding = 0
-click-left = /usr/bin/code &
-
-[module/telegram]
-type = custom/text
-content = "  Telegram"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_violet}
-content-padding = 0
-click-left = /usr/bin/telegram-desktop &
-
-
-[module/kodi]
-type = custom/text
-content = "  Kodi"
-content-font = 0
-content-background = ${color.background_alfa}
-content-foreground = ${color.foreground_violet}
-content-padding = 0
-click-left = /usr/bin/kodi &
+label-foreground = ${color.foreground_violet}
 
 ########################################
 ## Media ###
@@ -853,3 +741,117 @@ content-background = ${color.background_alfa}
 content-foreground = ${color.sky}
 content-padding = 0
 click-left = toggle-conkeww
+
+
+############################
+###  Apps  ###
+############################
+[module/terminal]
+type = custom/text
+content = "  Terminal"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.sky}
+content-padding = 0
+click-left = /usr/bin/kitty &
+click-right =
+
+[module/web]
+type = custom/text
+content = "  Firefox"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.lavender}
+content-padding = 0
+click-left = /usr/bin/firefox &
+
+[module/thunar]
+type = custom/text
+content = "  Thunar"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.maroon}
+content-padding = 0
+click-left = /usr/bin/thunar &
+
+[module/caja]
+type = custom/text
+content = "  Caja"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.flamingo}
+content-padding = 0
+click-left = /usr/bin/caja &
+
+[module/discord]
+type = custom/text
+content = "  Discord"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.indigo}
+content-padding = 0
+click-left = /usr/bin/discord &
+
+[module/kdenlive]
+type = custom/text
+content = "洞  Kdenlive"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.amber}
+content-padding = 0
+click-left = /usr/bin/kdenlive &
+
+[module/gimp]
+type = custom/text
+content = "  Gimp"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.teal}
+content-padding = 0
+click-left = /usr/bin/gimp &
+
+[module/krita]
+type = custom/text
+content = "  Krita"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.rose}
+content-padding = 0
+click-left = /usr/bin/krita &
+
+[module/blender]
+type = custom/text
+content = "  Blender"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.green}
+content-padding = 0
+click-left = /usr/bin/blender &
+
+[module/code]
+type = custom/text
+content = "ﬥ  Code"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.yellow}
+content-padding = 0
+click-left = /usr/bin/code &
+
+[module/telegram]
+type = custom/text
+content = "  Telegram"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.cyan}
+content-padding = 0
+click-left = /usr/bin/telegram-desktop &
+
+
+[module/kodi]
+type = custom/text
+content = "  Kodi"
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.pink}
+content-padding = 0
+click-left = /usr/bin/kodi &
