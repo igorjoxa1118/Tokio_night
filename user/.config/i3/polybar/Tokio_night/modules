@@ -844,3 +844,12 @@ format-background = ${color.background_alfa}
 [module/placeholder]
 type = custom/text
 content = "..."
+
+[module/keybinds]
+type = custom/text
+content = "  "
+content-font = 0
+content-background = ${color.background_alfa}
+content-foreground = ${color.sky}
+content-padding = 0
+click-left = toggle-conkeww
