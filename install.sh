@@ -82,7 +82,7 @@ dependencias=(base-devel yad cmus jgmenu rsync mpv jq git socat mpd polkit-gnome
               fzf mcfly neofetch zsh zsh-syntax-highlighting zsh-autosuggestions \
               zsh-history-substring-search starship bluez-utils bluez-tools bluez-plugins bluez-libs bluez blueman)
 
-dependencias_yay=(cava zscroll-git ytdlp-gui oh-my-zsh-git oh-my-posh-bin autotiling gtkhash-thunar zenity-gtk3 musikcube pamac-aur kazam)
+dependencias_yay=(cava zscroll-git ytdlp-gui oh-my-zsh-git oh-my-posh-bin autotiling gtkhash-thunar zenity-gtk3 eww musikcube pamac-aur kazam)
 
 if [ ! -f /usr/bin/firefox ];then 
  sudo pacman -S firefox
@@ -337,7 +337,7 @@ shell_change() {
 	if [[ $SHELL != "/usr/bin/zsh" ]]; then
 		echo -e "${ORANGE}Changing your shell to zsh. Your root password is needed."
 		# Переключиться на zsh
-		chsh -s /usr/bin/zsh
+		sudo chsh -s /usr/bin/zsh
 		echo -e "${LIGHTBLUE}Shell changed to zsh. Please reboot."
 	else
 		echo -e "${CYAN}Your shell is already zsh! Installation finished, now reboot"

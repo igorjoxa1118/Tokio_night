@@ -751,7 +751,7 @@ type = custom/text
 content = "  Terminal"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.sky}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/kitty &
 click-right =
@@ -761,7 +761,7 @@ type = custom/text
 content = "  Firefox"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.lavender}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/firefox &
 
@@ -770,7 +770,7 @@ type = custom/text
 content = "  Thunar"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.maroon}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/thunar &
 
@@ -779,7 +779,7 @@ type = custom/text
 content = "  Caja"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.flamingo}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/caja &
 
@@ -788,7 +788,7 @@ type = custom/text
 content = "  Discord"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.indigo}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/discord &
 
@@ -797,7 +797,7 @@ type = custom/text
 content = "洞  Kdenlive"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.amber}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/kdenlive &
 
@@ -806,7 +806,7 @@ type = custom/text
 content = "  Gimp"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.teal}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/gimp &
 
@@ -815,7 +815,7 @@ type = custom/text
 content = "  Krita"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.rose}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/krita &
 
@@ -824,7 +824,7 @@ type = custom/text
 content = "  Blender"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.green}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/blender &
 
@@ -833,7 +833,7 @@ type = custom/text
 content = "ﬥ  Code"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.yellow}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/code &
 
@@ -842,7 +842,7 @@ type = custom/text
 content = "  Telegram"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.cyan}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/telegram-desktop &
 
@@ -852,6 +852,6 @@ type = custom/text
 content = "  Kodi"
 content-font = 0
 content-background = ${color.background_alfa}
-content-foreground = ${color.pink}
+content-foreground = ${color.foreground_violet}
 content-padding = 0
 click-left = /usr/bin/kodi &
